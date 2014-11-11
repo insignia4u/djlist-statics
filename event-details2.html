@@ -1,0 +1,814 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport">
+<!-- Always force latest IE rendering engine or request Chrome Frame -->
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<!-- Use title if it's in the page YAML frontmatter -->
+<title>The Middleman</title>
+<link href="stylesheets/all.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="stylesheets/jquery.jscrollpane.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="stylesheets/style.css" media="screen" rel="stylesheet" type="text/css"/>
+<script src="javascripts/modernizr.custom.js"></script>
+<script src="javascripts/jquery-1.10.1.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900' rel='stylesheet' type='text/css'>
+</head>
+<body class="event_details">
+<div id="notifications" class="hidden">
+	<div class="go-to-web">
+		<i class="fa fa-times"></i>
+	</div>
+	<div class="activity-notification">
+		<h3 class="title-activity">
+		<div class="notication-triangle-right">
+		</div>
+		Last Activity</h3>
+		<div class="grp-item-activity">
+			<div class="item-activity">
+				<div class="avatars">
+					<img alt="avatar1" class="avatar" src="images/avatar1.png"/>
+					<img alt="avatar2" class="avatar" src="images/avatar2.png"/>
+					<img alt="avatar3" class="avatar" src="images/avatar3.png"/>
+					<img alt="avatar4" class="avatar" src="images/avatar4.png"/>
+					<img alt="avatar5" class="avatar" src="images/avatar5.png"/>
+					<img alt="avatar6" class="avatar" src="images/avatar6.png"/>
+				</div>
+				<div class="legend">
+					<div class="user-name-friends">
+						<a href="">Catalina</a>
+					</div>
+					 and
+					<div class="numbers-friends">
+						<a href="">12 friends</a>
+					</div>
+					<span class="legend-tag">are now following</span>
+					<div class="user-name">
+						<a href="">John Digweed</a>
+					</div>
+				</div>
+			</div>
+			<div class="item-activity">
+				<div class="avatars">
+					<img alt="avatar5" class="avatar" src="images/avatar5.png"/>
+					<img alt="avatar6" class="avatar" src="images/avatar6.png"/>
+				</div>
+				<div class="legend">
+					<div class="user-name-friends">
+						<ul>
+							<li>
+							<a href="">Catalina</a>
+							</li>
+							<li>
+							<a href="">Max</a>
+							</li>
+							<li>
+							<a href="">Anto</a>
+							</li>
+						</ul>
+					</div>
+					<span class="legend-tag">ranked</span>
+					<div class="user-name">
+						<a href="">John Digweed</a>
+					</div>
+				</div>
+			</div>
+			<div class="item-activity">
+				<div class="legend">
+					<div class="user-name">
+						<a href="">John Digweed</a>
+					</div>
+					<span class="legend-tag">has a new song called </span>
+					<div class="song-name">
+						<a href="">I hate you</a>
+					</div>
+				</div>
+			</div>
+			<div class="item-activity">
+				<div class="avatars">
+					<img alt="avatar6" class="avatar" src="images/avatar6.png"/>
+				</div>
+				<div class="legend">
+					<div class="user-name-friends">
+						<a href="#">Joe</a>
+					</div>
+					<span class="legend-tag">will got to next</span>
+					<div class="social-event">
+						<a href="">Hard Arena Show</a>
+					</div>
+				</div>
+			</div>
+			<div class="item-activity">
+				<div class="avatars">
+					<img alt="avatar1" class="avatar" src="images/avatar1.png"/>
+					<img alt="avatar2" class="avatar" src="images/avatar2.png"/>
+					<img alt="avatar3" class="avatar" src="images/avatar3.png"/>
+					<img alt="avatar4" class="avatar" src="images/avatar4.png"/>
+					<img alt="avatar5" class="avatar" src="images/avatar5.png"/>
+					<img alt="avatar6" class="avatar" src="images/avatar6.png"/>
+				</div>
+				<div class="legend">
+					<div class="user-name-friends">
+						<a href="">Catalina</a>
+					</div>
+					 and other
+					<div class="numbers-friends">
+						<a href="">7</a>
+					</div>
+					<span class="legend-tag">are now following</span>
+					<div class="user-name">
+						<a href="">John Digweed</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="account-notification">
+		<h3 class="title-account">
+		<div class="notication-triangle-right">
+		</div>
+		Your Account</h3>
+		<div class="account-menu">
+			<a href=""><i class="fa fa-gear"></i></a>
+			<a href=""><i class="fa fa-question-circle"></i></a>
+			<a href=""><i class="fa fa-power-off"></i></a>
+		</div>
+		<div class="item-account">
+			<ul>
+				<li><a href="">Messages</a></li>
+				<li><a href="">Credits</a></li>
+				<li><a href="">Promote Events</a></li>
+				<li><a href="">Promote Mixes</a></li>
+				<li><a href="">Promote Tracks</a></li>
+				<li><a href="">Promote Videos</a></li>
+				<li><a href="">Promote Releases</a></li>
+				<li><a href="">Shout!</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="search" class="view-search hidden">
+	<button class="close-search"><i class="fa fa-times"></i></button>
+	<div class="content">
+		<div class="grp-search">
+			<input class="input-search" type="text" placeholder="Type to search a DJ, Label, Venue, City...">
+			<button class="form-button-search"><i class="fa fa-search"></i></button>
+		</div>
+		<div class="autocomplete">
+			<ul>
+				<h3 class="f-black">DJS/Artists</h3>
+				<li><a href="">Avi</a></li>
+				<li><a href="">Avicii</a></li>
+				<li><a href="">Avirra</a></li>
+				<li><a href="">Avicci</a></li>
+				<li><a href="">Avilo</a></li>
+			</ul>
+			<ul>
+				<h3 class="f-black">Cities</h3>
+				<li>
+				<a href="">
+				Aviá, Spain
+				<div class="flag">
+					<img alt="sweden-flag" src="images/flags/spain-flag.png"/>
+				</div>
+				</a>
+				</li>
+				<li>
+				<a href="">
+				Aviagorodok, Russian Federation
+				<div class="flag">
+					<img alt="sweden-flag" src="images/flags/russia-flag.png"/>
+				</div>
+				</a>
+				</li>
+				<li>
+				<a href="">
+				Aviano, Italy
+				<div class="flag">
+					<img alt="sweden-flag" src="images/flags/italy-flag.png"/>
+				</div>
+				</a>
+				</li>
+			</ul>
+		</div>
+		<div class="see-more">
+			<div>
+				See more results for <a href="">Avi</a> on the DJ List
+			</div>
+		</div>
+	</div>
+</div>
+<!--.menu-mobile-->
+<div class="menu-mobile">
+	<div class="close">
+		<i class="fa fa-times"></i>
+	</div>
+	<ul class="nav">
+		<li>
+		<a href="#">Home</a>
+		</li>
+		<li class="active">
+		<a href="#">Artists</a>
+		</li>
+		<li>
+		<a href="#">News</a>
+		</li>
+		<li>
+		<a href="#">Events</a>
+		</li>
+	</ul>
+	<div class="search">
+		<input type="text" name="q" placeholder="Type to search a DJ, Label, Venue, City..."/>
+		<button type="submit">
+		<i class="fa fa-search"></i>
+		</button>
+	</div>
+	<ul class="nav nav2">
+		<li>
+		<a href="#">
+		<i class="fa fa-globe"></i>Los Angeles </a>
+		</li>
+		<li>
+		<a href="#">
+		<i class="fa fa-user"></i>
+		My Profile </a>
+		</li>
+		<li>
+		<a href="javascript:openActivity()">
+		<i class="fa fa-flash"></i>
+		Activity & Account </a>
+		</li>
+	</ul>
+</div>
+<!--.menu-mobile-->
+<div id="container-web">
+	<header id="header">
+	<a href="/" class="link-home">
+	<h1 id="logo" class="f-black inline-block c-violet">
+	THE <span class="f-light">DJ</span>
+	LIST </h1>
+	</a>
+	<nav id="navbar">
+	<div class="grp-menu-navbar inline-block">
+		<ul class="navbar-menu f-bold">
+			<li class="navbar-item"><a href="#">
+			<div class="triangle">
+			</div>
+			PROFILE</a>
+			<div class="triangle">
+			</div>
+			</li>
+			<li class="navbar-item"><a href="#">
+			<div class="triangle">
+			</div>
+			ARTISTS</a>
+			<div class="triangle">
+			</div>
+			</li>
+			<li class="navbar-item"><a href="#">
+			<div class="triangle">
+			</div>
+			RADIO</a>
+			<div class="triangle">
+			</div>
+			</li>
+			<li class="navbar-item"><a href="news.html">
+			<div class="triangle">
+			</div>
+			NEWS</a></li>
+			<li class="navbar-item"><a href="#" class="selected	">
+			<div class="triangle">
+			</div>
+			EVENTS</a></li>
+		</ul>
+		
+		<!-- .navbar-login -->
+	</div>
+	<!-- .grp-menu-navbar inline-block -->
+	<div class="grp-button">
+		<button class="button-header button-search inline-block"><i class="fa fa-search"></i></button>
+		<button class="button-header button-notification inline-block"><i class="fa fa-flash"></i></button>
+		<button class="button-header button-menu inline-block hidden-important"><i class="fa fa-bars"></i></button>
+	</div>
+	<!-- .grp-button -->
+	</nav>
+	<!-- #navbar -->
+	<!-- <button class="button-menu-mobile button-header-mobile">
+		<i class="fa fa-bars"></i>
+	</button>
+	<div class="menu-mobile">
+		<button class="fa fa-times"></button>
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">Artist</a></li>
+			<li><a href="">News</a></li>
+			<li><a href="">Events</a></li>
+			<li><input type="text"></li>
+			<li><a href=""><i class="fa fa-globe"></i>LOS ANGELES</a></li>
+			<li><a href=""><i class="fa fa-user"></i>MY PROFILE</a></li>
+			<li><a href=""><i class="fa fa-flash"></i>Activity & Account</a></li>
+		</ul>		
+	</div> -->
+	</header>
+	<!-- header -->
+	
+	<!-- #front-page -->
+	
+	<div class="container container-event-details"> 
+		<div class="content">
+			<div class="events-info-cnt">
+				<div class="events-info-map">
+					<iframe frameborder='0' src='http://a.tiles.mapbox.com/v3/jidecima87.i2higpek/attribution.html'></iframe>
+					<div class="events-info-map-actions">
+						<button class="button-white btn btn-5 btn-5b fa fa-bullhorn">
+							<span>
+								<i class="fa fa-bullhorn"></i>Promote Event
+							</span>
+						</button>
+						<button class="button-white btn btn-5 btn-5b fa fa-music">
+							<span>
+								<i class="fa fa-music"></i>Create New Event							
+							</span>
+						</button>			
+					</div><!-- /.events-info-map-actions -->
+				</div><!-- /.events-info-map -->
+				<div class="events-about-cnt">
+					<div class="events-about-content">
+						<h2>$OUND∏CES TUE$ // KOZEE // HYPHA // ONHELL</h2>
+						<div class="events-about-content-inner">
+							<div class="events-about-text">
+								<h3>February 11, 2014 </h3>
+
+								<h3><i class="fa fa-map-marker"></i> Monarch - 101 6th St. </h3>
+								<h4>San Francisco, United States </h4>
+								<p><i class="ico-clock"></i>10:00 PM / Ages 21 and over</p>
+							</div><!-- /.events-about-text -->
+							<div class="events-about-actions">
+								<button class="button-white btn btn-5 btn-5b fa fa-chevron-right">
+									<span>join</span>
+								</button>
+								<h4><a href="#"><i class="ico-play"></i>Play event radio</a></h4>
+							</div><!-- /.events-about-actions -->
+						</div><!-- /.events-about-content-inner -->
+					</div><!-- /.events-about-content -->
+					<div class="relative carrousel-dj carrousel-dj-medium">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<!--.dj-box-->
+								<div class="dj-box">
+									<div class="avatar">
+										<img src="images/faces/ranking/face0.jpg" alt="">
+										<!--.follow-->
+										<div class="follow">
+											<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+											<span>Follow</span>
+											</a>
+										</div>
+										<!--.follow-->
+									</div>
+									<a href="#" class="name">
+									<h3>Hardwell</h3>
+									<h4>trance</h4>
+									</a>
+								</div>
+								<!--.dj-box-->
+							</div>
+							<div class="swiper-slide">
+								<!--.dj-box-->
+								<div class="dj-box">
+									<div class="avatar">
+										<img src="images/faces/ranking/face1.jpg" alt="">
+										<!--.follow-->
+										<div class="follow">
+											<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+											<span>Follow</span>
+											</a>
+										</div>
+										<!--.follow-->
+									</div>
+									<a href="#" class="name">
+									<h3>Hardwell</h3>
+									<h4>trance, progressive house</h4>
+									</a>
+								</div>
+								<!--.dj-box-->
+							</div>
+							<div class="swiper-slide">
+								<!--.dj-box-->
+								<div class="dj-box">
+									<div class="avatar">
+										<img src="images/faces/ranking/face2.jpg" alt="">
+										<!--.follow-->
+										<div class="follow">
+											<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+											<span>Follow</span>
+											</a>
+										</div>
+										<!--.follow-->
+									</div>
+									<a href="#" class="name">
+									<h3>Hardwell</h3>
+									<h4>house</h4>
+									</a>
+								</div>
+								<!--.dj-box-->
+							</div>
+							<div class="swiper-slide">
+								<!--.dj-box-->
+								<div class="dj-box">
+									<div class="avatar">
+										<img src="images/faces/ranking/face3.jpg" alt="">
+										<!--.follow-->
+										<div class="follow">
+											<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+											<span>Follow</span>
+											</a>
+										</div>
+										<!--.follow-->
+									</div>
+									<a href="#" class="name">
+									<h3>Hardwell</h3>
+									<h4>trance</h4>
+									</a>
+								</div>
+								<!--.dj-box-->
+							</div>
+							<div class="swiper-slide">
+								<!--.dj-box-->
+								<div class="dj-box">
+									<div class="avatar">
+										<img src="images/faces/ranking/face4.jpg" alt="">
+										<!--.follow-->
+										<div class="follow">
+											<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+											<span>Follow</span>
+											</a>
+										</div>
+										<!--.follow-->
+									</div>
+									<a href="#" class="name">
+									<h3>Hardwell</h3>
+									<h4>trance, progressive house</h4>
+									</a>
+								</div>
+								<!--.dj-box-->
+							</div>
+							<div class="swiper-slide">
+								<!--.dj-box-->
+								<div class="dj-box">
+									<div class="avatar">
+										<img src="images/faces/ranking/face5.jpg" alt="">
+										<!--.follow-->
+										<div class="follow">
+											<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+											<span>Follow</span>
+											</a>
+										</div>
+										<!--.follow-->
+									</div>
+									<a href="#" class="name">
+									<h3>Hardwell</h3>
+									<h4>trance</h4>
+									</a>
+								</div>
+								<!--.dj-box-->
+							</div>
+							<div class="swiper-slide">
+								<!--.dj-box-->
+								<div class="dj-box">
+									<div class="avatar">
+										<img src="images/faces/ranking/face6.jpg" alt="">
+										<!--.follow-->
+										<div class="follow">
+											<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+											<span>Follow</span>
+											</a>
+										</div>
+										<!--.follow-->
+									</div>
+									<a href="#" class="name">
+									<h3>Hardwell</h3>
+									<h4>progressive house</h4>
+									</a>
+								</div>
+								<!--.dj-box-->
+							</div>
+							<div class="swiper-slide">
+								<!--.dj-box-->
+								<div class="dj-box">
+									<div class="avatar">
+										<img src="images/faces/ranking/face7.jpg" alt="">
+										<!--.follow-->
+										<div class="follow">
+											<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+											<span>Follow</span>
+											</a>
+										</div>
+										<!--.follow-->
+									</div>
+									<a href="#" class="name">
+									<h3>Hardwell</h3>
+									<h4>progressive house</h4>
+									</a>
+								</div>
+								<!--.dj-box-->
+							</div>
+							<div class="swiper-slide">
+								<!--.dj-box-->
+								<div class="dj-box">
+									<div class="avatar">
+										<img src="images/faces/ranking/face8.jpg" alt="">
+										<!--.follow-->
+										<div class="follow">
+											<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+											<span>Follow</span>
+											</a>
+										</div>
+										<!--.follow-->
+									</div>
+									<a href="#" class="name">
+									<h3>Hardwell</h3>
+									<h4>progressive house</h4>
+									</a>
+								</div>
+								<!--.dj-box-->
+							</div>
+							<div class="swiper-slide">
+								<!--.dj-box-->
+								<div class="dj-box">
+									<div class="avatar">
+										<img src="images/faces/ranking/face9.jpg" alt="">
+										<!--.follow-->
+										<div class="follow">
+											<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+											<span>Follow</span>
+											</a>
+										</div>
+										<!--.follow-->
+									</div>
+									<a href="#" class="name">
+									<h3>Hardwell</h3>
+									<h4>progressive house</h4>
+									</a>
+								</div>
+								<!--.dj-box-->
+							</div>
+							<div class="swiper-slide">
+								<!--.dj-box-->
+								<div class="dj-box">
+									<div class="avatar">
+										<img src="images/faces/ranking/face10.jpg" alt="">
+										<!--.follow-->
+										<div class="follow">
+											<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+											<span>Follow</span>
+											</a>
+										</div>
+										<!--.follow-->
+									</div>
+									<a href="#" class="name">
+									<h3>Hardwell</h3>
+									<h4>progressive house</h4>
+									</a>
+								</div>
+								<!--.dj-box-->
+							</div>
+							<div class="swiper-slide">
+								<!--.dj-box-->
+								<div class="dj-box">
+									<div class="avatar">
+										<img src="images/faces/ranking/face11.jpg" alt="">
+										<!--.follow-->
+										<div class="follow">
+											<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+											<span>Follow</span>
+											</a>
+										</div>
+										<!--.follow-->
+									</div>
+									<a href="#" class="name">
+									<h3>Hardwell</h3>
+									<h4>progressive house</h4>
+									</a>
+								</div>
+								<!--.dj-box-->
+							</div>
+							<div class="swiper-slide">
+								<!--.dj-box-->
+								<div class="dj-box">
+									<div class="avatar">
+										<img src="images/faces/ranking/face12.jpg" alt="">
+										<!--.follow-->
+										<div class="follow">
+											<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+											<span>Follow</span>
+											</a>
+										</div>
+										<!--.follow-->
+									</div>
+									<a href="#" class="name">
+									<h3>Hardwell</h3>
+									<h4>progressive house</h4>
+									</a>
+								</div>
+								<!--.dj-box-->
+							</div>
+							<div class="swiper-slide">
+								<!--.dj-box-->
+								<div class="dj-box">
+									<div class="avatar">
+										<img src="images/faces/ranking/face13.jpg" alt="">
+										<!--.follow-->
+										<div class="follow">
+											<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+											<span>Follow</span>
+											</a>
+										</div>
+										<!--.follow-->
+									</div>
+									<a href="#" class="name">
+									<h3>Hardwell</h3>
+									<h4>progressive house</h4>
+									</a>
+								</div>
+								<!--.dj-box-->
+							</div>
+							<div class="swiper-slide">
+								<!--.dj-box-->
+								<div class="dj-box">
+									<div class="avatar">
+										<img src="images/faces/ranking/face14.jpg" alt="">
+										<!--.follow-->
+										<div class="follow">
+											<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+											<span>Follow</span>
+											</a>
+										</div>
+										<!--.follow-->
+									</div>
+									<a href="#" class="name">
+									<h3>Hardwell</h3>
+									<h4>progressive house</h4>
+									</a>
+								</div>
+								<!--.dj-box-->
+							</div>
+						</div>				
+					</div>
+				</div><!-- /.events-about-cnt -->				
+			</div><!-- /.events-info-cnt -->
+			
+			<div class="events-details-container">
+				<div class="events-details-entry">
+					<div class="events-details-entry-image">
+						<a href="#"><img src="images/events-entry.jpg" alt="" /></a>
+					</div><!-- /.events-details-entry-image -->
+					<div class="events-details-entry-content">
+						<h3>Details</h3>
+						<div class="events-details-entry-scrl">
+							<p>1192 Folsom – Every Tuesday – Keeping the Global Vibe Alive!</p>
+							<p>This is our ongoing event page, which gets updated weekly with the upcoming Tuesday’s lineups.</p>
+							<p><span>This week …</span>Feb 11: <a href="#">DJ Amar + MWE</a> (Live Balkan Brass band), Laura June (Vancouver, BC), FatChanceBellyDance, Wendy Martlatt, Pixie Fordtears, Caro Dumanni + more TBA</p>
+							<p>This week brings local brass band MWE and dancers from Mexico City, Vancouver, BC and LA, plus your local favorites. It is 2nd Tuesday with DJ Amar and FatChanceBellyDance and Wendy Martlatt as usual but with so much more this week. It’s gonna be an extra spectacular extended performance show, a full live set by MWE, a second performance set which will be All-Improv <a href="#">“Eclectic Ensemble”</a> style to DJ Amar mixing on the fly, and plenty of dancefloor time to Amar’s Global grooves.</p>
+							<p>Feb 18: Drumspyder, Danielle Lottridge, Larissa Archer, Tatyana</p>
+							<p>Feb 25: Dulce Vita, Kami Liddle Strange Brew Hafla</p>
+							<p>March 4: DJ Dragonfly, Adara Dance Co., Chandala Shiva, Angela Eckstrand</p>
+							<p>March 11: <a href="#">DJ Amar</a>, FatChanceBellyDance, Wendy Martlatt, Jodi Waseca</p>
+							<p>March 18: DJ Santero, Amberetta, Larisa Archer, Azure (Crickett’s birthday party)</p>
+							<p>March 25: Dulce Vita, Marci Ann, Millie Maddox, Jadeera</p>
+							<p>April 1: DJ Feral (April + May Dancers TBA)</p>
+							<p>This week brings local brass band MWE and dancers from Mexico City, Vancouver, BC and LA, plus your local favorites. It is 2nd Tuesday with DJ Amar and FatChanceBellyDance and Wendy Martlatt as usual but with so much more this week. It’s gonna be an extra spectacular extended performance show, a full live set by MWE, a second performance set which will be All-Improv <a href="#">“Eclectic Ensemble”</a> style to DJ Amar mixing on the fly, and plenty of dancefloor time to Amar’s Global grooves.</p>
+							<p>This week brings local brass band MWE and dancers from Mexico City, Vancouver, BC and LA, plus your local favorites. It is 2nd Tuesday with DJ Amar and FatChanceBellyDance and Wendy Martlatt as usual but with so much more this week. It’s gonna be an extra spectacular extended performance show, a full live set by MWE, a second performance set which will be All-Improv <a href="#">“Eclectic Ensemble”</a> style to DJ Amar mixing on the fly, and plenty of dancefloor time to Amar’s Global grooves.</p>
+							<p>This week brings local brass band MWE and dancers from Mexico City, Vancouver, BC and LA, plus your local favorites. It is 2nd Tuesday with DJ Amar and FatChanceBellyDance and Wendy Martlatt as usual but with so much more this week. It’s gonna be an extra spectacular extended performance show, a full live set by MWE, a second performance set which will be All-Improv <a href="#">“Eclectic Ensemble”</a> style to DJ Amar mixing on the fly, and plenty of dancefloor time to Amar’s Global grooves.</p>
+						</div><!-- /.events-details-entry-scrl -->
+					</div><!-- /.events-details-entry-content -->
+				</div><!-- /.events-details-scrl -->
+				<div class="events-details-about">
+					<h3>234 Friends are going</h3>
+					<div class="events-details-list">
+						<ul>
+							<li><a href="#"><img src="images/event-box1.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/event-box2.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/event-box3.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/event-box4.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/event-box5.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/event-box6.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/event-box7.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/event-box8.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/event-box9.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/event-box10.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/event-box11.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/event-box12.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/event-box13.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/event-box14.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/event-box15.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/event-box16.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/event-box17.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/event-box18.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/event-box19.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/event-box20.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/event-box21.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/event-box22.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/event-box23.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/event-box24.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/event-box25.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/event-box26.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/event-box27.jpg" alt=""></a></li>
+							<li><a href="#"><img src="images/event-box28.jpg" alt=""></a></li>
+						</ul>
+					</div><!-- /.events-details-box -->
+					<div class="events-details-article">
+						<div class="events-details-article-image">
+							<a href="#"><img src="images/event-article.jpg" alt="" /></a>
+						</div><!-- /.events-details-article-image -->
+
+						<div class="events-details-article-content">
+							<h2>
+								<a href="#">F8 - 1192 Folsom</a>
+								<div class="follow">
+									<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+									<span>Follow</span>
+									</a>
+								</div>
+							</h2>
+							<ul>
+								<li>
+									<a href="#">
+										<strong>2</strong>
+										Upcoming Events
+									</a>										
+								</li>
+								<li>
+									<a href="#">
+										<strong>166</strong>
+										Following
+									</a>										
+								</li>
+							</ul>
+						</div><!-- /.events-details-article-content -->
+					</div><!-- /.events-details-follow -->
+				</div><!-- /.events-details-about -->
+			</div><!-- /.events-details-container -->
+		</div>
+	</div>
+	<!-- .venue-layout -->
+	<footer id="footer" class="container">
+	<ul id="sign-up" class="inline-block">
+		<h4>SIGN UP</h4>
+		<li><a href="">Join</a></li>
+		<li><a href="">Free or Login</a></li>
+		<li class="phone"><a href=""><i class="fa fa-mobile-phone"></i></a></li>
+		<li id="link_to_app"><a href="">Get DJListAPP</a></li>
+	</ul>
+	<ul id="company" class="inline-block">
+		<h4>COMPANY</h4>
+		<li><a href="">About</a></li>
+		<li><a href="">Contact US</a></li>
+		<li><a href="">Help & FAQs</a></li>
+		<li><a href="">Jobs</a></li>
+		<li><a href="">Partner</a></li>
+	</ul>
+	<ul id="claim-profile" class="inline-block">
+		<h4>CLAIM PROFILE</h4>
+		<li><a href="">Djs</a></li>
+		<li><a href="">Clubs/Venues</a></li>
+		<li><a href="">Agents/Mgmt</a></li>
+		<li><a href="">Labels</a></li>
+		<li><a href="">Publicists</a></li>
+	</ul>
+	<ul id="extras" class="inline-block">
+		<h4>EXTRAS</h4>
+		<li><a href="">PRO DJ</a></li>
+		<li><a href="">Credits</a></li>
+		<li><a href="">IPhone App</a></li>
+		<li><a href="">Developer Api</a></li>
+		<li><a href="">Merchandise</a></li>
+	</ul>
+	<ul id="social" class="inline-block">
+		<h4>SOCIAL</h4>
+		<li><a href=""><i class="fa fa-facebook2"></i>Facebook</a></li>
+		<li><a href=""><i class="fa fa-twitter"></i>Twitter</a></li>
+		<li><a href=""><i class="fa fa-instagram"></i>Instagram</a></li>
+		<li><a href=""><i class="fa fa-youtube-play"></i>YouTube</a></li>
+	</ul>
+	<div id="copyright">
+		<div class="legend">
+			<span class="f-bold">THE</span><span class="f-light">DJ</span><span class="f-bold">LIST</span> thedjlist.com All rights Reserved.
+		</div>
+	</div>
+	</footer>
+</div>
+<script src="javascripts/jquery.mousewheel.js" type="text/javascript"></script>
+<script src="javascripts/jquery.jscrollpane.js" type="text/javascript"></script>
+<script src="javascripts/functions.js" type="text/javascript"></script>
+<script src="javascripts/jquery.carouFredSel-6.2.1-packed.js" type="text/javascript"></script>
+<script src="javascripts/all.js" type="text/javascript"></script>
+<script src="javascripts/responsive.js"></script>
+<script src="javascripts/jquery.flipshow.js"></script>
+<script>
+    $( function() {
+        $( '#fc-slideshow' ).flipshow();
+    } );
+ </script>
+</body>
+</html>

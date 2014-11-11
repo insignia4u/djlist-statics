@@ -1,0 +1,1248 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport">
+<!-- Always force latest IE rendering engine or request Chrome Frame -->
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<!-- Use title if it's in the page YAML frontmatter -->
+<title>The Middleman</title>
+<link href="stylesheets/all.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="stylesheets/style.css" media="screen" rel="stylesheet" type="text/css"/>
+<script src="javascripts/modernizr.custom.js"></script>
+<script src="javascripts/jquery-1.10.1.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900' rel='stylesheet' type='text/css'>
+</head>
+<body class="event_details">
+	<div class="events-wrapper">
+	<div id="notifications" class="hidden">
+		<div class="go-to-web">
+			<i class="fa fa-times"></i>
+		</div>
+		<div class="activity-notification">
+			<h3 class="title-activity">
+			<div class="notication-triangle-right">
+			</div>
+			Last Activity</h3>
+			<div class="grp-item-activity">
+				<div class="item-activity">
+					<div class="avatars">
+						<img alt="avatar1" class="avatar" src="images/avatar1.png"/>
+						<img alt="avatar2" class="avatar" src="images/avatar2.png"/>
+						<img alt="avatar3" class="avatar" src="images/avatar3.png"/>
+						<img alt="avatar4" class="avatar" src="images/avatar4.png"/>
+						<img alt="avatar5" class="avatar" src="images/avatar5.png"/>
+						<img alt="avatar6" class="avatar" src="images/avatar6.png"/>
+					</div>
+					<div class="legend">
+						<div class="user-name-friends">
+							<a href="">Catalina</a>
+						</div>
+						 and
+						<div class="numbers-friends">
+							<a href="">12 friends</a>
+						</div>
+						<span class="legend-tag">are now following</span>
+						<div class="user-name">
+							<a href="">John Digweed</a>
+						</div>
+					</div>
+				</div>
+				<div class="item-activity">
+					<div class="avatars">
+						<img alt="avatar5" class="avatar" src="images/avatar5.png"/>
+						<img alt="avatar6" class="avatar" src="images/avatar6.png"/>
+					</div>
+					<div class="legend">
+						<div class="user-name-friends">
+							<ul>
+								<li>
+								<a href="">Catalina</a>
+								</li>
+								<li>
+								<a href="">Max</a>
+								</li>
+								<li>
+								<a href="">Anto</a>
+								</li>
+							</ul>
+						</div>
+						<span class="legend-tag">ranked</span>
+						<div class="user-name">
+							<a href="">John Digweed</a>
+						</div>
+					</div>
+				</div>
+				<div class="item-activity">
+					<div class="legend">
+						<div class="user-name">
+							<a href="">John Digweed</a>
+						</div>
+						<span class="legend-tag">has a new song called </span>
+						<div class="song-name">
+							<a href="">I hate you</a>
+						</div>
+					</div>
+				</div>
+				<div class="item-activity">
+					<div class="avatars">
+						<img alt="avatar6" class="avatar" src="images/avatar6.png"/>
+					</div>
+					<div class="legend">
+						<div class="user-name-friends">
+							<a href="#">Joe</a>
+						</div>
+						<span class="legend-tag">will got to next</span>
+						<div class="social-event">
+							<a href="">Hard Arena Show</a>
+						</div>
+					</div>
+				</div>
+				<div class="item-activity">
+					<div class="avatars">
+						<img alt="avatar1" class="avatar" src="images/avatar1.png"/>
+						<img alt="avatar2" class="avatar" src="images/avatar2.png"/>
+						<img alt="avatar3" class="avatar" src="images/avatar3.png"/>
+						<img alt="avatar4" class="avatar" src="images/avatar4.png"/>
+						<img alt="avatar5" class="avatar" src="images/avatar5.png"/>
+						<img alt="avatar6" class="avatar" src="images/avatar6.png"/>
+					</div>
+					<div class="legend">
+						<div class="user-name-friends">
+							<a href="">Catalina</a>
+						</div>
+						 and other
+						<div class="numbers-friends">
+							<a href="">7</a>
+						</div>
+						<span class="legend-tag">are now following</span>
+						<div class="user-name">
+							<a href="">John Digweed</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="account-notification">
+			<h3 class="title-account">
+			<div class="notication-triangle-right">
+			</div>
+			Your Account</h3>
+			<div class="account-menu">
+				<a href=""><i class="fa fa-gear"></i></a>
+				<a href=""><i class="fa fa-question-circle"></i></a>
+				<a href=""><i class="fa fa-power-off"></i></a>
+			</div>
+			<div class="item-account">
+				<ul>
+					<li><a href="">Messages</a></li>
+					<li><a href="">Credits</a></li>
+					<li><a href="">Promote Events</a></li>
+					<li><a href="">Promote Mixes</a></li>
+					<li><a href="">Promote Tracks</a></li>
+					<li><a href="">Promote Videos</a></li>
+					<li><a href="">Promote Releases</a></li>
+					<li><a href="">Shout!</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="search" class="view-search hidden">
+		<button class="close-search"><i class="fa fa-times"></i></button>
+		<div class="content">
+			<div class="grp-search">
+				<input class="input-search" type="text" placeholder="Type to search a DJ, Label, Venue, City...">
+				<button class="form-button-search"><i class="fa fa-search"></i></button>
+			</div>
+			<div class="autocomplete">
+				<ul>
+					<h3 class="f-black">DJS/Artists</h3>
+					<li><a href="">Avi</a></li>
+					<li><a href="">Avicii</a></li>
+					<li><a href="">Avirra</a></li>
+					<li><a href="">Avicci</a></li>
+					<li><a href="">Avilo</a></li>
+				</ul>
+				<ul>
+					<h3 class="f-black">Cities</h3>
+					<li>
+					<a href="">
+					Aviá, Spain
+					<div class="flag">
+						<img alt="sweden-flag" src="images/flags/spain-flag.png"/>
+					</div>
+					</a>
+					</li>
+					<li>
+					<a href="">
+					Aviagorodok, Russian Federation
+					<div class="flag">
+						<img alt="sweden-flag" src="images/flags/russia-flag.png"/>
+					</div>
+					</a>
+					</li>
+					<li>
+					<a href="">
+					Aviano, Italy
+					<div class="flag">
+						<img alt="sweden-flag" src="images/flags/italy-flag.png"/>
+					</div>
+					</a>
+					</li>
+				</ul>
+			</div>
+			<div class="see-more">
+				<div>
+					See more results for <a href="">Avi</a> on the DJ List
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--.menu-mobile-->
+	<div class="menu-mobile">
+		<div class="close">
+			<i class="fa fa-times"></i>
+		</div>
+		<ul class="nav">
+			<li>
+			<a href="#">Home</a>
+			</li>
+			<li class="active">
+			<a href="#">Artists</a>
+			</li>
+			<li>
+			<a href="#">News</a>
+			</li>
+			<li>
+			<a href="#">Events</a>
+			</li>
+		</ul>
+		<div class="search">
+			<input type="text" name="q" placeholder="Type to search a DJ, Label, Venue, City..."/>
+			<button type="submit">
+			<i class="fa fa-search"></i>
+			</button>
+		</div>
+		<ul class="nav nav2">
+			<li>
+			<a href="#">
+			<i class="fa fa-globe"></i>Los Angeles </a>
+			</li>
+			<li>
+			<a href="#">
+			<i class="fa fa-user"></i>
+			My Profile </a>
+			</li>
+			<li>
+			<a href="javascript:openActivity()">
+			<i class="fa fa-flash"></i>
+			Activity & Account </a>
+			</li>
+		</ul>
+	</div>
+	<!--.menu-mobile-->
+	<div id="container-web">
+		<header id="header">
+		<a href="/" class="link-home">
+		<h1 id="logo" class="f-black inline-block c-violet">
+		THE <span class="f-light">DJ</span>
+		LIST </h1>
+		</a>
+		<nav id="navbar">
+		<div class="grp-menu-navbar inline-block">
+			<ul class="navbar-menu f-bold">
+				<li class="navbar-item"><a href="#">
+				<div class="triangle">
+				</div>
+				PROFILE</a>
+				<div class="triangle">
+				</div>
+				</li>
+				<li class="navbar-item"><a href="#">
+				<div class="triangle">
+				</div>
+				DJS</a>
+				<div class="triangle">
+				</div>
+				</li>
+				<li class="navbar-item"><a href="#">
+				<div class="triangle">
+				</div>
+				RADIO</a>
+				<div class="triangle">
+				</div>
+				</li>
+				<li class="navbar-item"><a href="news.html">
+				<div class="triangle">
+				</div>
+				NEWS</a></li>
+				<li class="navbar-item"><a href="#" class="selected	">
+				<div class="triangle">
+				</div>
+				EVENTS</a></li>
+			</ul>		
+			<!-- .navbar-login -->
+		</div>
+		<!-- .grp-menu-navbar inline-block -->
+		<div class="grp-button">
+			<button class="button-header button-search inline-block"><i class="fa fa-search"></i></button>
+			<button class="button-header button-notification inline-block"><i class="fa fa-flash"></i></button>
+			<button class="button-header button-menu inline-block hidden-important"><i class="fa fa-bars"></i></button>
+		</div>
+		<!-- .grp-button -->
+		</nav>
+		<!-- #navbar -->
+		<!-- <button class="button-menu-mobile button-header-mobile">
+			<i class="fa fa-bars"></i>
+		</button>
+		<div class="menu-mobile">
+			<button class="fa fa-times"></button>
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">Artist</a></li>
+				<li><a href="">News</a></li>
+				<li><a href="">Events</a></li>
+				<li><input type="text"></li>
+				<li><a href=""><i class="fa fa-globe"></i>LOS ANGELES</a></li>
+				<li><a href=""><i class="fa fa-user"></i>MY PROFILE</a></li>
+				<li><a href=""><i class="fa fa-flash"></i>Activity & Account</a></li>
+			</ul>		
+		</div> -->
+		</header>
+		<!-- header -->
+		<div id="front-page" class="venue-front-page events-front-page">
+			<!--.content-->
+			<div class="content">
+				<iframe frameborder='0' src='http://a.tiles.mapbox.com/v3/jidecima87.i2higpek/attribution.html'>
+				</iframe>
+				<!--.centered-->
+				<div class="centered">
+					<!--.box-bottom-->
+						<div class="events-search-container">
+							<div class="events-search-head">
+								<h2>Serch Events</h2>
+								<div class="events-search-head-actions">
+									<button class="button-white btn btn-5 btn-5b fa fa-bullhorn">
+										<span>
+											<i class="fa fa-bullhorn"></i>Promote Event
+										</span>
+									</button>
+									<button class="button-white btn btn-5 btn-5b fa fa-music">
+										<span>
+											<i class="fa fa-music"></i>Create New Event							
+										</span>
+									</button>			
+								</div><!-- /.events-search-head-actions -->
+							</div><!-- /.events-seach-head -->
+							<div class="events-search-content cols">
+								<div class="col3 left">
+									<div class="input-search-2">
+								<input type="text" placeholder="Search by DJ, Event or ZipCode" />
+							</div>
+								</div><!-- /.col3 left -->
+								<div class="col4 left">
+									<div class="drop-down">
+										<div class="label">
+											All Venues
+										</div>
+										<!--.list-->
+										<div class="list">
+											<ul>
+												<li>
+												<a href="#">
+												South America</a>
+												</li>
+												<li>
+												<a href="#">							
+												Sweden </a>
+												</li>
+												<li>
+												<a href="#">
+												Switzerland </a>
+												</li>
+												<li>
+												<a href="#">
+												Taiwan </a>
+												</li>
+												<li>
+												<a href="#">
+												Suriname </a>
+												</li>
+												<li>
+												<a href="#">
+												Sweden </a>
+												</li>
+												<li>
+												<a href="#">
+												Switzerland </a>
+												</li>
+												<li>
+												<a href="#">
+												Taiwan </a>
+												</li>
+												<li>
+												<a href="#">
+												Suriname </a>
+												</li>
+												<li>
+												<a href="#">
+												Sweden </a>
+												</li>
+												<li>
+												<a href="#">
+												Switzerland </a>
+												</li>
+												<li>
+												<a href="#">
+												Taiwan </a>
+												</li>
+											</ul>
+										</div>
+										<!--.list-->
+									</div>
+								</div><!-- /.col4 left -->
+								<div class="col5 left">
+									<div class="drop-down">
+										<div class="label">
+											ALL DJs
+										</div>
+										<!--.list-->
+										<div class="list">
+											<ul>
+												<li>
+												<a href="#">
+												South America</a>
+												</li>
+												<li>
+												<a href="#">							
+												Sweden </a>
+												</li>
+												<li>
+												<a href="#">
+												Switzerland </a>
+												</li>
+												<li>
+												<a href="#">
+												Taiwan </a>
+												</li>
+												<li>
+												<a href="#">
+												Suriname </a>
+												</li>
+												<li>
+												<a href="#">
+												Sweden </a>
+												</li>
+												<li>
+												<a href="#">
+												Switzerland </a>
+												</li>
+												<li>
+												<a href="#">
+												Taiwan </a>
+												</li>
+												<li>
+												<a href="#">
+												Suriname </a>
+												</li>
+												<li>
+												<a href="#">
+												Sweden </a>
+												</li>
+												<li>
+												<a href="#">
+												Switzerland </a>
+												</li>
+												<li>
+												<a href="#">
+												Taiwan </a>
+												</li>
+											</ul>
+										</div>
+										<!--.list-->
+									</div>
+								</div><!-- /.col4 left -->
+							</div><!-- /.events-search-content -->
+						</div><!-- /.events-seach-container -->
+					<!--.box-bottom-->
+				</div>
+				<!--.centered--><!-- /.content-small -->
+			</div>
+			<!--.content-->
+		</div>
+		<!-- #front-page -->		
+		<div class="container-wrapper">
+			<div class="container world-layout event-details-layout"> 
+				<div class="content">
+					<div class="event-lists-container">
+						<div class="event-lists-navigation">
+							 <ul>
+							 	<li class="active"><a href="#">US</a></li>
+							 	<li><a href="#">Canada</a></li>
+							 	<li><a href="#">Europe</a></li>
+							 	<li><a href="#">Asia/Pacific/Middle East</a></li>
+							 	<li><a href="#">Oceania</a></li>
+							 	<li><a href="#">Latin America</a></li>
+							 	<li><a href="#">Africa</a></li>
+							 </ul>
+						</div><!-- /.event-lists-navigation -->
+						<div class="event-lists-title">
+							<h2>United States</h2>
+						</div><!-- /.event-lists-title -->
+						<ul class="event-lists">
+							<li>
+								<h3>Alabama</h3>
+								<ul>
+									<li><a href="#">auburn</a></li>
+									<li><a href="#">birmingham</a></li>
+									<li><a href="#">dothan</a></li>
+									<li><a href="#">florence / muscle shoals</a></li>
+									<li><a href="#">gadsden-anniston</a></li>
+									<li><a href="#">huntsville / decatur</a></li>
+									<li><a href="#">mobile</a></li>
+									<li><a href="#">montgomery</a></li>
+									<li><a href="#">tuscaloosa</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Alabama</h3>
+								<ul>
+									<li><a href="#">auburn</a></li>
+									<li><a href="#">birmingham</a></li>
+									<li><a href="#">dothan</a></li>
+									<li><a href="#">florence / muscle shoals</a></li>
+									<li><a href="#">gadsden-anniston</a></li>
+									<li><a href="#">huntsville / decatur</a></li>
+									<li><a href="#">mobile</a></li>
+									<li><a href="#">montgomery</a></li>
+									<li><a href="#">tuscaloosa</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Alabama</h3>
+								<ul>
+									<li><a href="#">auburn</a></li>
+									<li><a href="#">birmingham</a></li>
+									<li><a href="#">dothan</a></li>
+									<li><a href="#">florence / muscle shoals</a></li>
+									<li><a href="#">gadsden-anniston</a></li>
+									<li><a href="#">huntsville / decatur</a></li>
+									<li><a href="#">mobile</a></li>
+									<li><a href="#">montgomery</a></li>
+									<li><a href="#">tuscaloosa</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Alabama</h3>
+								<ul>
+									<li><a href="#">auburn</a></li>
+									<li><a href="#">birmingham</a></li>
+									<li><a href="#">dothan</a></li>
+									<li><a href="#">florence / muscle shoals</a></li>
+									<li><a href="#">gadsden-anniston</a></li>
+									<li><a href="#">huntsville / decatur</a></li>
+									<li><a href="#">mobile</a></li>
+									<li><a href="#">montgomery</a></li>
+									<li><a href="#">tuscaloosa</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Alaska</h3>
+								<ul>
+									<li><a href="#">anchorage / mat-su</a></li>
+									<li><a href="#">fairbanks</a></li>
+									<li><a href="#">kenai peninsula</a></li>
+									<li><a href="#">southeast alaska</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Alaska</h3>
+								<ul>
+									<li><a href="#">anchorage / mat-su</a></li>
+									<li><a href="#">fairbanks</a></li>
+									<li><a href="#">kenai peninsula</a></li>
+									<li><a href="#">southeast alaska</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Alaska</h3>
+								<ul>
+									<li><a href="#">anchorage / mat-su</a></li>
+									<li><a href="#">fairbanks</a></li>
+									<li><a href="#">kenai peninsula</a></li>
+									<li><a href="#">southeast alaska</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Alaska</h3>
+								<ul>
+									<li><a href="#">anchorage / mat-su</a></li>
+									<li><a href="#">fairbanks</a></li>
+									<li><a href="#">kenai peninsula</a></li>
+									<li><a href="#">southeast alaska</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Arizona</h3>
+								<ul>
+									<li><a href="#">flagstaff / sedona</a></li>
+									<li><a href="#">mohave county</a></li>
+									<li><a href="#">phoenix</a></li>
+									<li><a href="#">prescott</a></li>
+									<li><a href="#">show low</a></li>
+									<li><a href="#">sierra vista</a></li>
+									<li><a href="#">tucson</a></li>
+									<li><a href="#">yuma</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Arizona</h3>
+								<ul>
+									<li><a href="#">flagstaff / sedona</a></li>
+									<li><a href="#">mohave county</a></li>
+									<li><a href="#">phoenix</a></li>
+									<li><a href="#">prescott</a></li>
+									<li><a href="#">show low</a></li>
+									<li><a href="#">sierra vista</a></li>
+									<li><a href="#">tucson</a></li>
+									<li><a href="#">yuma</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Arizona</h3>
+								<ul>
+									<li><a href="#">flagstaff / sedona</a></li>
+									<li><a href="#">mohave county</a></li>
+									<li><a href="#">phoenix</a></li>
+									<li><a href="#">prescott</a></li>
+									<li><a href="#">show low</a></li>
+									<li><a href="#">sierra vista</a></li>
+									<li><a href="#">tucson</a></li>
+									<li><a href="#">yuma</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Arizona</h3>
+								<ul>
+									<li><a href="#">flagstaff / sedona</a></li>
+									<li><a href="#">mohave county</a></li>
+									<li><a href="#">phoenix</a></li>
+									<li><a href="#">prescott</a></li>
+									<li><a href="#">show low</a></li>
+									<li><a href="#">sierra vista</a></li>
+									<li><a href="#">tucson</a></li>
+									<li><a href="#">yuma</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Arkansas</h3>
+								<ul>
+									<li><a href="#">fayetteville</a></li>
+									<li><a href="#">fort smith</a></li>
+									<li><a href="#">jonesboro</a></li>
+									<li><a href="#">little rock</a></li>
+									<li><a href="#">texarkana</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Arkansas</h3>
+								<ul>
+									<li><a href="#">fayetteville</a></li>
+									<li><a href="#">fort smith</a></li>
+									<li><a href="#">jonesboro</a></li>
+									<li><a href="#">little rock</a></li>
+									<li><a href="#">texarkana</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Arkansas</h3>
+								<ul>
+									<li><a href="#">fayetteville</a></li>
+									<li><a href="#">fort smith</a></li>
+									<li><a href="#">jonesboro</a></li>
+									<li><a href="#">little rock</a></li>
+									<li><a href="#">texarkana</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Arkansas</h3>
+								<ul>
+									<li><a href="#">fayetteville</a></li>
+									<li><a href="#">fort smith</a></li>
+									<li><a href="#">jonesboro</a></li>
+									<li><a href="#">little rock</a></li>
+									<li><a href="#">texarkana</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>California</h3>
+								<ul>
+									<li><a href="#">bakersfield</a></li>
+									<li><a href="#">chico</a></li>
+									<li><a href="#">fresno / madera</a></li>
+									<li><a href="#">gold country</a></li>
+									<li><a href="#">hanford-corcoran</a></li>
+									<li><a href="#">humboldt county</a></li>
+									<li><a href="#">imperial county</a></li>
+									<li><a href="#">inland empire</a></li>
+									<li><a href="#">los angeles</a></li>
+									<li><a href="#">mendocino county</a></li>
+									<li><a href="#">merced</a></li>
+									<li><a href="#">modesto</a></li>
+									<li><a href="#">monterey bay</a></li>
+									<li><a href="#">orange county</a></li>
+									<li><a href="#">palm springs</a></li>
+									<li><a href="#">redding</a></li>
+									<li><a href="#">sacramento</a></li>
+									<li><a href="#">san diego</a></li>
+									<li><a href="#">san francisco bay area</a></li>
+									<li><a href="#">san luis obispo</a></li>
+									<li><a href="#">santa barbara</a></li>
+									<li><a href="#">santa maria</a></li>
+									<li><a href="#">siskiyou county</a></li>
+									<li><a href="#">stockton</a></li>
+									<li><a href="#">susanville</a></li>
+									<li><a href="#">ventura county</a></li>
+									<li><a href="#">visalia-tulare</a></li>
+									<li><a href="#">yuba-sutter</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>California</h3>
+								<ul>
+									<li><a href="#">bakersfield</a></li>
+									<li><a href="#">chico</a></li>
+									<li><a href="#">fresno / madera</a></li>
+									<li><a href="#">gold country</a></li>
+									<li><a href="#">hanford-corcoran</a></li>
+									<li><a href="#">humboldt county</a></li>
+									<li><a href="#">imperial county</a></li>
+									<li><a href="#">inland empire</a></li>
+									<li><a href="#">los angeles</a></li>
+									<li><a href="#">mendocino county</a></li>
+									<li><a href="#">merced</a></li>
+									<li><a href="#">modesto</a></li>
+									<li><a href="#">monterey bay</a></li>
+									<li><a href="#">orange county</a></li>
+									<li><a href="#">palm springs</a></li>
+									<li><a href="#">redding</a></li>
+									<li><a href="#">sacramento</a></li>
+									<li><a href="#">san diego</a></li>
+									<li><a href="#">san francisco bay area</a></li>
+									<li><a href="#">san luis obispo</a></li>
+									<li><a href="#">santa barbara</a></li>
+									<li><a href="#">santa maria</a></li>
+									<li><a href="#">siskiyou county</a></li>
+									<li><a href="#">stockton</a></li>
+									<li><a href="#">susanville</a></li>
+									<li><a href="#">ventura county</a></li>
+									<li><a href="#">visalia-tulare</a></li>
+									<li><a href="#">yuba-sutter</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>California</h3>
+								<ul>
+									<li><a href="#">bakersfield</a></li>
+									<li><a href="#">chico</a></li>
+									<li><a href="#">fresno / madera</a></li>
+									<li><a href="#">gold country</a></li>
+									<li><a href="#">hanford-corcoran</a></li>
+									<li><a href="#">humboldt county</a></li>
+									<li><a href="#">imperial county</a></li>
+									<li><a href="#">inland empire</a></li>
+									<li><a href="#">los angeles</a></li>
+									<li><a href="#">mendocino county</a></li>
+									<li><a href="#">merced</a></li>
+									<li><a href="#">modesto</a></li>
+									<li><a href="#">monterey bay</a></li>
+									<li><a href="#">orange county</a></li>
+									<li><a href="#">palm springs</a></li>
+									<li><a href="#">redding</a></li>
+									<li><a href="#">sacramento</a></li>
+									<li><a href="#">san diego</a></li>
+									<li><a href="#">san francisco bay area</a></li>
+									<li><a href="#">san luis obispo</a></li>
+									<li><a href="#">santa barbara</a></li>
+									<li><a href="#">santa maria</a></li>
+									<li><a href="#">siskiyou county</a></li>
+									<li><a href="#">stockton</a></li>
+									<li><a href="#">susanville</a></li>
+									<li><a href="#">ventura county</a></li>
+									<li><a href="#">visalia-tulare</a></li>
+									<li><a href="#">yuba-sutter</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>California</h3>
+								<ul>
+									<li><a href="#">bakersfield</a></li>
+									<li><a href="#">chico</a></li>
+									<li><a href="#">fresno / madera</a></li>
+									<li><a href="#">gold country</a></li>
+									<li><a href="#">hanford-corcoran</a></li>
+									<li><a href="#">humboldt county</a></li>
+									<li><a href="#">imperial county</a></li>
+									<li><a href="#">inland empire</a></li>
+									<li><a href="#">los angeles</a></li>
+									<li><a href="#">mendocino county</a></li>
+									<li><a href="#">merced</a></li>
+									<li><a href="#">modesto</a></li>
+									<li><a href="#">monterey bay</a></li>
+									<li><a href="#">orange county</a></li>
+									<li><a href="#">palm springs</a></li>
+									<li><a href="#">redding</a></li>
+									<li><a href="#">sacramento</a></li>
+									<li><a href="#">san diego</a></li>
+									<li><a href="#">san francisco bay area</a></li>
+									<li><a href="#">san luis obispo</a></li>
+									<li><a href="#">santa barbara</a></li>
+									<li><a href="#">santa maria</a></li>
+									<li><a href="#">siskiyou county</a></li>
+									<li><a href="#">stockton</a></li>
+									<li><a href="#">susanville</a></li>
+									<li><a href="#">ventura county</a></li>
+									<li><a href="#">visalia-tulare</a></li>
+									<li><a href="#">yuba-sutter</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Colorado</h3>
+								<ul>
+									<li><a href="#">boulder</a></li>
+									<li><a href="#">colorado springs</a></li>
+									<li><a href="#">denver</a></li>
+									<li><a href="#">eastern CO</a></li>
+									<li><a href="#">fort collins / north CO</a></li>
+									<li><a href="#">high rockies</a></li>
+									<li><a href="#">pueblo</a></li>
+									<li><a href="#">western slope</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Colorado</h3>
+								<ul>
+									<li><a href="#">boulder</a></li>
+									<li><a href="#">colorado springs</a></li>
+									<li><a href="#">denver</a></li>
+									<li><a href="#">eastern CO</a></li>
+									<li><a href="#">fort collins / north CO</a></li>
+									<li><a href="#">high rockies</a></li>
+									<li><a href="#">pueblo</a></li>
+									<li><a href="#">western slope</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Colorado</h3>
+								<ul>
+									<li><a href="#">boulder</a></li>
+									<li><a href="#">colorado springs</a></li>
+									<li><a href="#">denver</a></li>
+									<li><a href="#">eastern CO</a></li>
+									<li><a href="#">fort collins / north CO</a></li>
+									<li><a href="#">high rockies</a></li>
+									<li><a href="#">pueblo</a></li>
+									<li><a href="#">western slope</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Colorado</h3>
+								<ul>
+									<li><a href="#">boulder</a></li>
+									<li><a href="#">colorado springs</a></li>
+									<li><a href="#">denver</a></li>
+									<li><a href="#">eastern CO</a></li>
+									<li><a href="#">fort collins / north CO</a></li>
+									<li><a href="#">high rockies</a></li>
+									<li><a href="#">pueblo</a></li>
+									<li><a href="#">western slope</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Connecticut</h3>
+								<ul>
+									<li><a href="#">eastern CT</a></li>
+									<li><a href="#">hartford</a></li>
+									<li><a href="#">new haven</a></li>
+									<li><a href="#">northwest CT</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Connecticut</h3>
+								<ul>
+									<li><a href="#">eastern CT</a></li>
+									<li><a href="#">hartford</a></li>
+									<li><a href="#">new haven</a></li>
+									<li><a href="#">northwest CT</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Connecticut</h3>
+								<ul>
+									<li><a href="#">eastern CT</a></li>
+									<li><a href="#">hartford</a></li>
+									<li><a href="#">new haven</a></li>
+									<li><a href="#">northwest CT</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Connecticut</h3>
+								<ul>
+									<li><a href="#">eastern CT</a></li>
+									<li><a href="#">hartford</a></li>
+									<li><a href="#">new haven</a></li>
+									<li><a href="#">northwest CT</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Delaware</h3>
+								<ul>
+									<li><a href="#">delaware</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Delaware</h3>
+								<ul>
+									<li><a href="#">delaware</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Delaware</h3>
+								<ul>
+									<li><a href="#">delaware</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Delaware</h3>
+								<ul>
+									<li><a href="#">delaware</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>District of Columbia</h3>
+								<ul>
+									<li><a href="#">washington</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>District of Columbia</h3>
+								<ul>
+									<li><a href="#">washington</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>District of Columbia</h3>
+								<ul>
+									<li><a href="#">washington</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>District of Columbia</h3>
+								<ul>
+									<li><a href="#">washington</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Florida</h3>
+								<ul>
+									<li><a href="#">daytona beach</a></li>
+									<li><a href="#">florida keys</a></li>
+									<li><a href="#">fort lauderdale</a></li>
+									<li><a href="#">ft myers / SW florida</a></li>
+									<li><a href="#">gainesville</a></li>
+									<li><a href="#">heartland florida</a></li>
+									<li><a href="#">jacksonville</a></li>
+									<li><a href="#">lakeland</a></li>
+									<li><a href="#">north central FL</a></li>
+									<li><a href="#">ocala</a></li>
+									<li><a href="#">okaloosa / walton</a></li>
+									<li><a href="#">orlando</a></li>
+									<li><a href="#">panama city</a></li>
+									<li><a href="#">pensacola</a></li>
+									<li><a href="#">sarasota-bradenton</a></li>
+									<li><a href="#">south florida</a></li>
+									<li><a href="#">space coast</a></li>
+									<li><a href="#">st augustine</a></li>
+									<li><a href="#">tallahassee</a></li>
+									<li><a href="#">tampa bay area</a></li>
+									<li><a href="#">treasure coast</a></li>
+									<li><a href="#">west palm beach</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Florida</h3>
+								<ul>
+									<li><a href="#">daytona beach</a></li>
+									<li><a href="#">florida keys</a></li>
+									<li><a href="#">fort lauderdale</a></li>
+									<li><a href="#">ft myers / SW florida</a></li>
+									<li><a href="#">gainesville</a></li>
+									<li><a href="#">heartland florida</a></li>
+									<li><a href="#">jacksonville</a></li>
+									<li><a href="#">lakeland</a></li>
+									<li><a href="#">north central FL</a></li>
+									<li><a href="#">ocala</a></li>
+									<li><a href="#">okaloosa / walton</a></li>
+									<li><a href="#">orlando</a></li>
+									<li><a href="#">panama city</a></li>
+									<li><a href="#">pensacola</a></li>
+									<li><a href="#">sarasota-bradenton</a></li>
+									<li><a href="#">south florida</a></li>
+									<li><a href="#">space coast</a></li>
+									<li><a href="#">st augustine</a></li>
+									<li><a href="#">tallahassee</a></li>
+									<li><a href="#">tampa bay area</a></li>
+									<li><a href="#">treasure coast</a></li>
+									<li><a href="#">west palm beach</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Florida</h3>
+								<ul>
+									<li><a href="#">daytona beach</a></li>
+									<li><a href="#">florida keys</a></li>
+									<li><a href="#">fort lauderdale</a></li>
+									<li><a href="#">ft myers / SW florida</a></li>
+									<li><a href="#">gainesville</a></li>
+									<li><a href="#">heartland florida</a></li>
+									<li><a href="#">jacksonville</a></li>
+									<li><a href="#">lakeland</a></li>
+									<li><a href="#">north central FL</a></li>
+									<li><a href="#">ocala</a></li>
+									<li><a href="#">okaloosa / walton</a></li>
+									<li><a href="#">orlando</a></li>
+									<li><a href="#">panama city</a></li>
+									<li><a href="#">pensacola</a></li>
+									<li><a href="#">sarasota-bradenton</a></li>
+									<li><a href="#">south florida</a></li>
+									<li><a href="#">space coast</a></li>
+									<li><a href="#">st augustine</a></li>
+									<li><a href="#">tallahassee</a></li>
+									<li><a href="#">tampa bay area</a></li>
+									<li><a href="#">treasure coast</a></li>
+									<li><a href="#">west palm beach</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Florida</h3>
+								<ul>
+									<li><a href="#">daytona beach</a></li>
+									<li><a href="#">florida keys</a></li>
+									<li><a href="#">fort lauderdale</a></li>
+									<li><a href="#">ft myers / SW florida</a></li>
+									<li><a href="#">gainesville</a></li>
+									<li><a href="#">heartland florida</a></li>
+									<li><a href="#">jacksonville</a></li>
+									<li><a href="#">lakeland</a></li>
+									<li><a href="#">north central FL</a></li>
+									<li><a href="#">ocala</a></li>
+									<li><a href="#">okaloosa / walton</a></li>
+									<li><a href="#">orlando</a></li>
+									<li><a href="#">panama city</a></li>
+									<li><a href="#">pensacola</a></li>
+									<li><a href="#">sarasota-bradenton</a></li>
+									<li><a href="#">south florida</a></li>
+									<li><a href="#">space coast</a></li>
+									<li><a href="#">st augustine</a></li>
+									<li><a href="#">tallahassee</a></li>
+									<li><a href="#">tampa bay area</a></li>
+									<li><a href="#">treasure coast</a></li>
+									<li><a href="#">west palm beach</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Georgia</h3>
+								<ul>
+									<li><a href="#">albany</a></li>
+									<li><a href="#">athens</a></li>
+									<li><a href="#">atlanta</a></li>
+									<li><a href="#">augusta</a></li>
+									<li><a href="#">brunswick</a></li>
+									<li><a href="#">columbus</a></li>
+									<li><a href="#">macon / warner robins</a></li>
+									<li><a href="#">northwest GA</a></li>
+									<li><a href="#">savannah / hinesville</a></li>
+									<li><a href="#">statesboro</a></li>
+									<li><a href="#">valdosta</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Georgia</h3>
+								<ul>
+									<li><a href="#">albany</a></li>
+									<li><a href="#">athens</a></li>
+									<li><a href="#">atlanta</a></li>
+									<li><a href="#">augusta</a></li>
+									<li><a href="#">brunswick</a></li>
+									<li><a href="#">columbus</a></li>
+									<li><a href="#">macon / warner robins</a></li>
+									<li><a href="#">northwest GA</a></li>
+									<li><a href="#">savannah / hinesville</a></li>
+									<li><a href="#">statesboro</a></li>
+									<li><a href="#">valdosta</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Georgia</h3>
+								<ul>
+									<li><a href="#">albany</a></li>
+									<li><a href="#">athens</a></li>
+									<li><a href="#">atlanta</a></li>
+									<li><a href="#">augusta</a></li>
+									<li><a href="#">brunswick</a></li>
+									<li><a href="#">columbus</a></li>
+									<li><a href="#">macon / warner robins</a></li>
+									<li><a href="#">northwest GA</a></li>
+									<li><a href="#">savannah / hinesville</a></li>
+									<li><a href="#">statesboro</a></li>
+									<li><a href="#">valdosta</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Georgia</h3>
+								<ul>
+									<li><a href="#">albany</a></li>
+									<li><a href="#">athens</a></li>
+									<li><a href="#">atlanta</a></li>
+									<li><a href="#">augusta</a></li>
+									<li><a href="#">brunswick</a></li>
+									<li><a href="#">columbus</a></li>
+									<li><a href="#">macon / warner robins</a></li>
+									<li><a href="#">northwest GA</a></li>
+									<li><a href="#">savannah / hinesville</a></li>
+									<li><a href="#">statesboro</a></li>
+									<li><a href="#">valdosta</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Hawaii</h3>
+								<ul>
+									<li><a href="#">hawaii</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Hawaii</h3>
+								<ul>
+									<li><a href="#">hawaii</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Hawaii</h3>
+								<ul>
+									<li><a href="#">hawaii</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Hawaii</h3>
+								<ul>
+									<li><a href="#">hawaii</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Idaho</h3>
+								<ul>
+									<li><a href="#">boise</a></li>
+									<li><a href="#">east idaho</a></li>
+									<li><a href="#">lewiston / clarkston</a></li>
+									<li><a href="#">twin falls</a></li>
+									<li><a href="#">jacksonville</a></li>
+									<li><a href="#">lakeland</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Idaho</h3>
+								<ul>
+									<li><a href="#">boise</a></li>
+									<li><a href="#">east idaho</a></li>
+									<li><a href="#">lewiston / clarkston</a></li>
+									<li><a href="#">twin falls</a></li>
+									<li><a href="#">jacksonville</a></li>
+									<li><a href="#">lakeland</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Idaho</h3>
+								<ul>
+									<li><a href="#">boise</a></li>
+									<li><a href="#">east idaho</a></li>
+									<li><a href="#">lewiston / clarkston</a></li>
+									<li><a href="#">twin falls</a></li>
+									<li><a href="#">jacksonville</a></li>
+									<li><a href="#">lakeland</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>Idaho</h3>
+								<ul>
+									<li><a href="#">boise</a></li>
+									<li><a href="#">east idaho</a></li>
+									<li><a href="#">lewiston / clarkston</a></li>
+									<li><a href="#">twin falls</a></li>
+									<li><a href="#">jacksonville</a></li>
+									<li><a href="#">lakeland</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div><!-- /.event-lists -->
+				</div>
+			</div>
+		</div><!-- /.container-wrapper -->
+		<!-- .venue-layout -->
+		<footer id="footer" class="container">
+		<ul id="sign-up" class="inline-block">
+			<h4>SIGN UP</h4>
+			<li><a href="">Join</a></li>
+			<li><a href="">Free or Login</a></li>
+			<li class="phone"><a href=""><i class="fa fa-mobile-phone"></i></a></li>
+			<li id="link_to_app"><a href="">Get DJListAPP</a></li>
+		</ul>
+		<ul id="company" class="inline-block">
+			<h4>COMPANY</h4>
+			<li><a href="">About</a></li>
+			<li><a href="">Contact US</a></li>
+			<li><a href="">Help & FAQs</a></li>
+			<li><a href="">Jobs</a></li>
+			<li><a href="">Partner</a></li>
+		</ul>
+		<ul id="claim-profile" class="inline-block">
+			<h4>CLAIM PROFILE</h4>
+			<li><a href="">Djs</a></li>
+			<li><a href="">Clubs/Venues</a></li>
+			<li><a href="">Agents/Mgmt</a></li>
+			<li><a href="">Labels</a></li>
+			<li><a href="">Publicists</a></li>
+		</ul>
+		<ul id="extras" class="inline-block">
+			<h4>EXTRAS</h4>
+			<li><a href="">PRO DJ</a></li>
+			<li><a href="">Credits</a></li>
+			<li><a href="">IPhone App</a></li>
+			<li><a href="">Developer Api</a></li>
+			<li><a href="">Merchandise</a></li>
+		</ul>
+		<ul id="social" class="inline-block">
+			<h4>SOCIAL</h4>
+			<li><a href=""><i class="fa fa-facebook2"></i>Facebook</a></li>
+			<li><a href=""><i class="fa fa-twitter"></i>Twitter</a></li>
+			<li><a href=""><i class="fa fa-instagram"></i>Instagram</a></li>
+			<li><a href=""><i class="fa fa-youtube-play"></i>YouTube</a></li>
+		</ul>
+		<div id="copyright">
+			<div class="legend">
+				<span class="f-bold">THE</span><span class="f-light">DJ</span><span class="f-bold">LIST</span> thedjlist.com All rights Reserved.
+			</div>
+		</div>
+		</footer>
+	</div>
+	<script src="javascripts/functions.js" type="text/javascript"></script>
+	<script src="javascripts/all.js" type="text/javascript"></script>
+	<script src="javascripts/responsive.js"></script>
+	<script src="javascripts/jquery.flipshow.js"></script>
+	<script>
+	    $( function() {
+	        $( '#fc-slideshow' ).flipshow();
+	    } );
+	 </script>
+</div><!-- /.events-wrapper -->
+</body>
+</html>

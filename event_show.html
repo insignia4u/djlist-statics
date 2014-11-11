@@ -1,0 +1,1104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport">
+<!-- Always force latest IE rendering engine or request Chrome Frame -->
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<!-- Use title if it's in the page YAML frontmatter -->
+<title>The Middleman</title>
+<link href="stylesheets/all.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="stylesheets/style.css" media="screen" rel="stylesheet" type="text/css"/>
+<script src="javascripts/modernizr.custom.js"></script>
+<script src="javascripts/jquery-1.10.1.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900' rel='stylesheet' type='text/css'>
+</head>
+<body class="event_details gray">
+<div id="notifications" class="hidden">
+	<div class="go-to-web">
+		<i class="fa fa-times"></i>
+	</div>
+	<div class="activity-notification">
+		<h3 class="title-activity">
+		<div class="notication-triangle-right">
+		</div>
+		Last Activity</h3>
+		<div class="grp-item-activity">
+			<div class="item-activity">
+				<div class="avatars">
+					<img alt="avatar1" class="avatar" src="images/avatar1.png"/>
+					<img alt="avatar2" class="avatar" src="images/avatar2.png"/>
+					<img alt="avatar3" class="avatar" src="images/avatar3.png"/>
+					<img alt="avatar4" class="avatar" src="images/avatar4.png"/>
+					<img alt="avatar5" class="avatar" src="images/avatar5.png"/>
+					<img alt="avatar6" class="avatar" src="images/avatar6.png"/>
+				</div>
+				<div class="legend">
+					<div class="user-name-friends">
+						<a href="">Catalina</a>
+					</div>
+					 and
+					<div class="numbers-friends">
+						<a href="">12 friends</a>
+					</div>
+					<span class="legend-tag">are now following</span>
+					<div class="user-name">
+						<a href="">John Digweed</a>
+					</div>
+				</div>
+			</div>
+			<div class="item-activity">
+				<div class="avatars">
+					<img alt="avatar5" class="avatar" src="images/avatar5.png"/>
+					<img alt="avatar6" class="avatar" src="images/avatar6.png"/>
+				</div>
+				<div class="legend">
+					<div class="user-name-friends">
+						<ul>
+							<li>
+							<a href="">Catalina</a>
+							</li>
+							<li>
+							<a href="">Max</a>
+							</li>
+							<li>
+							<a href="">Anto</a>
+							</li>
+						</ul>
+					</div>
+					<span class="legend-tag">ranked</span>
+					<div class="user-name">
+						<a href="">John Digweed</a>
+					</div>
+				</div>
+			</div>
+			<div class="item-activity">
+				<div class="legend">
+					<div class="user-name">
+						<a href="">John Digweed</a>
+					</div>
+					<span class="legend-tag">has a new song called </span>
+					<div class="song-name">
+						<a href="">I hate you</a>
+					</div>
+				</div>
+			</div>
+			<div class="item-activity">
+				<div class="avatars">
+					<img alt="avatar6" class="avatar" src="images/avatar6.png"/>
+				</div>
+				<div class="legend">
+					<div class="user-name-friends">
+						<a href="#">Joe</a>
+					</div>
+					<span class="legend-tag">will got to next</span>
+					<div class="social-event">
+						<a href="">Hard Arena Show</a>
+					</div>
+				</div>
+			</div>
+			<div class="item-activity">
+				<div class="avatars">
+					<img alt="avatar1" class="avatar" src="images/avatar1.png"/>
+					<img alt="avatar2" class="avatar" src="images/avatar2.png"/>
+					<img alt="avatar3" class="avatar" src="images/avatar3.png"/>
+					<img alt="avatar4" class="avatar" src="images/avatar4.png"/>
+					<img alt="avatar5" class="avatar" src="images/avatar5.png"/>
+					<img alt="avatar6" class="avatar" src="images/avatar6.png"/>
+				</div>
+				<div class="legend">
+					<div class="user-name-friends">
+						<a href="">Catalina</a>
+					</div>
+					 and other
+					<div class="numbers-friends">
+						<a href="">7</a>
+					</div>
+					<span class="legend-tag">are now following</span>
+					<div class="user-name">
+						<a href="">John Digweed</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="account-notification">
+		<h3 class="title-account">
+		<div class="notication-triangle-right">
+		</div>
+		Your Account</h3>
+		<div class="account-menu">
+			<a href=""><i class="fa fa-gear"></i></a>
+			<a href=""><i class="fa fa-question-circle"></i></a>
+			<a href=""><i class="fa fa-power-off"></i></a>
+		</div>
+		<div class="item-account">
+			<ul>
+				<li><a href="">Messages</a></li>
+				<li><a href="">Credits</a></li>
+				<li><a href="">Promote Events</a></li>
+				<li><a href="">Promote Mixes</a></li>
+				<li><a href="">Promote Tracks</a></li>
+				<li><a href="">Promote Videos</a></li>
+				<li><a href="">Promote Releases</a></li>
+				<li><a href="">Shout!</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="search" class="view-search hidden">
+	<button class="close-search"><i class="fa fa-times"></i></button>
+	<div class="content">
+		<div class="grp-search">
+			<input class="input-search" type="text" placeholder="Type to search a DJ, Label, Venue, City...">
+			<button class="form-button-search"><i class="fa fa-search"></i></button>
+		</div>
+		<div class="autocomplete">
+			<ul>
+				<h3 class="f-black">DJS/Artists</h3>
+				<li><a href="">Avi</a></li>
+				<li><a href="">Avicii</a></li>
+				<li><a href="">Avirra</a></li>
+				<li><a href="">Avicci</a></li>
+				<li><a href="">Avilo</a></li>
+			</ul>
+			<ul>
+				<h3 class="f-black">Cities</h3>
+				<li>
+				<a href="">
+				Aviá, Spain
+				<div class="flag">
+					<img alt="sweden-flag" src="images/flags/spain-flag.png"/>
+				</div>
+				</a>
+				</li>
+				<li>
+				<a href="">
+				Aviagorodok, Russian Federation
+				<div class="flag">
+					<img alt="sweden-flag" src="images/flags/russia-flag.png"/>
+				</div>
+				</a>
+				</li>
+				<li>
+				<a href="">
+				Aviano, Italy
+				<div class="flag">
+					<img alt="sweden-flag" src="images/flags/italy-flag.png"/>
+				</div>
+				</a>
+				</li>
+			</ul>
+		</div>
+		<div class="see-more">
+			<div>
+				See more results for <a href="">Avi</a> on the DJ List
+			</div>
+		</div>
+	</div>
+</div>
+<!--.menu-mobile-->
+<div class="menu-mobile">
+	<div class="close">
+		<i class="fa fa-times"></i>
+	</div>
+	<ul class="nav">
+		<li>
+		<a href="#">Home</a>
+		</li>
+		<li class="active">
+		<a href="#">Artists</a>
+		</li>
+		<li>
+		<a href="#">News</a>
+		</li>
+		<li>
+		<a href="#">Events</a>
+		</li>
+	</ul>
+	<div class="search">
+		<input type="text" name="q" placeholder="Type to search a DJ, Label, Venue, City..."/>
+		<button type="submit">
+		<i class="fa fa-search"></i>
+		</button>
+	</div>
+	<ul class="nav nav2">
+		<li>
+		<a href="#">
+		<i class="fa fa-globe"></i>Los Angeles </a>
+		</li>
+		<li>
+		<a href="#">
+		<i class="fa fa-user"></i>
+		My Profile </a>
+		</li>
+		<li>
+		<a href="javascript:openActivity()">
+		<i class="fa fa-flash"></i>
+		Activity & Account </a>
+		</li>
+	</ul>
+</div>
+<!--.menu-mobile-->
+<div id="container-web" class="container-web-home">
+	<header id="header">
+	<a href="/" class="link-home">
+	<h1 id="logo" class="f-black inline-block c-violet">
+	THE <span class="f-light">DJ</span>
+	LIST </h1>
+	</a>
+	<nav id="navbar">
+	<div class="grp-menu-navbar inline-block">
+		<ul class="navbar-menu f-bold">
+			<li class="navbar-item"><a href="#">
+			<div class="triangle">
+			</div>
+			ARTISTS</a>
+			<div class="triangle">
+			</div>
+			</li>
+			<li class="navbar-item"><a href="news.html">
+			<div class="triangle">
+			</div>
+			NEWS</a></li>
+			<li class="navbar-item"><a href="#" class="selected	">
+			<div class="triangle">
+			</div>
+			EVENTS</a></li>
+		</ul>
+		<ul class="navbar-login f-bold">
+			<div class="info-account">
+				<li class="world-navbar-menu"><a><i class="fa fa-globe"></i>LOS ANGELES</a>
+				<div id="world" class="world-menu">
+					<div class="new-event">
+						<h3 class="f-black">New Event</h3>
+						<div class="date">
+							<div class="day f-black">
+								31
+							</div>
+							<div class="month f-black">
+								Jan
+							</div>
+						</div>
+						<div class="where-artist">
+							<div class="artist-name">
+								<a href="">David Guetta and Avicci</a>
+							</div>
+							<h5 class="where-title f-regular">
+							<a href=""><i class="fa fa-map-marker"></i>The Loft</a>
+							</h5>
+						</div>
+					</div>
+					<div class="new-dj">
+						<h3 class="f-black">New Dj</h3>
+						<div class="dj-name">
+							<a href="">Walter White</a>
+						</div>
+						<div class="music-tags">
+							<a href="" class="f-black">House</a>
+						</div>
+					</div>
+					<div class="world-menu-options">
+						<div>
+							<button class="go-to btn btn-5 btn-5b fa fa-chevron-right"><span>Go to Los Angeles</span></button>
+						</div>
+						<div>
+							<button class="change-city">Change City</button>
+						</div>
+					</div>
+				</div>
+				</li>
+				<li><a href=""><i class="fa fa-user"></i>MY PROFILE</a></li>
+			</div>
+		</ul>
+		<!-- .navbar-login -->
+	</div>
+	<!-- .grp-menu-navbar inline-block -->
+	<div class="grp-button">
+		<button class="button-header button-search inline-block"><i class="fa fa-search"></i></button>
+		<button class="button-header button-notification inline-block"><i class="fa fa-flash"></i></button>
+		<button class="button-header button-menu inline-block hidden-important"><i class="fa fa-bars"></i></button>
+	</div>
+	<!-- .grp-button -->
+	</nav>
+	<!-- #navbar -->
+	<!-- <button class="button-menu-mobile button-header-mobile">
+		<i class="fa fa-bars"></i>
+	</button>
+	<div class="menu-mobile">
+		<button class="fa fa-times"></button>
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">Artist</a></li>
+			<li><a href="">News</a></li>
+			<li><a href="">Events</a></li>
+			<li><input type="text"></li>
+			<li><a href=""><i class="fa fa-globe"></i>LOS ANGELES</a></li>
+			<li><a href=""><i class="fa fa-user"></i>MY PROFILE</a></li>
+			<li><a href=""><i class="fa fa-flash"></i>Activity & Account</a></li>
+		</ul>		
+	</div> -->
+	</header>
+	<!-- header -->
+	<div id="front-page" class="venue-front-page events-front-page">
+		<!--.content-->
+		<div class="content">
+			<iframe frameborder='0' src='http://a.tiles.mapbox.com/v3/jidecima87.i2higpek/attribution.html'>
+			</iframe>
+			<!--.centered-->
+			<div class="centered">
+				<!--.box-bottom-->
+				<div class="box box-event-new">
+					<div class="col-1">
+						<!--.image-venue -->
+						<div class="image-venue">
+							<img alt="venue1" class="image-venue" src="images/venues/venue5.png"/>
+						</div>
+						<!--.image-venue -->
+						<div class="followers version1">
+							<div class="numbers f-black">
+								386
+							</div>
+							<span class="f-regular">FOLLOWERS</span>
+						</div>
+					</div>
+					<div class="col-2">
+						<div class="title-venue title-venue-small">
+							<h3>TORQ &amp; Trap City present  Valentino Khan + Bare</h3>							
+							<div class="info-extra">
+								<ul>
+									<li>
+									<i class="fa fa-calendar"></i>April 24, 2014
+									</li>
+									<li>
+									<i class="fa fa-map-marker"></i><span class="purple">Ruby Sky</span> - 316 11th Street, San Francisco, CA
+									</li>									
+									<li>
+									<i class="fa fa-clock-o"></i>8:00 PM to 2:00 AM
+									</li>
+									<li>
+									<i class="fa fa-info"></i>Ages 21 and over									
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row-bottom">
+							<div class="followers version2">
+								<div class="numbers f-black">
+									386
+								</div>
+								<span class="f-regular">FOLLOWERS</span>
+							</div>
+
+							<div class="image-followers">
+								<a href="#"><img src="images/avatar/avatar10.png" alt=""></a>
+								<a href="#"><img src="images/avatar/avatar11.png" alt=""></a>
+								<a href="#"><img src="images/avatar/avatar12.png" alt=""></a>
+								<a href="#"><img src="images/avatar/avatar13.png" alt=""></a>
+								<a href="#"><img src="images/avatar/avatar14.png" alt=""></a>
+								<a href="#"><img src="images/avatar/avatar12.png" alt=""></a>
+							</div>
+							<div class="followers-actions">
+								<button class="button-follow-small button-follow btn">
+									<span class="f-check">I'm going</span>
+								</button>
+								<button class="button-follow-small button-follow btn">
+									<span class="ticket">Tickets</span>
+								</button>
+							</div><!-- /.followers-actions -->
+						</div>			
+						<div class="row-breadcrumb">
+							<p><a href="#">Events</a><span>&raquo;</span><a href="#">United States</a><span>&raquo;</span><a href="#">San Francisco</a><span>&raquo;</span><em>TORQ &amp; Trap City present Valentino Khan + Bare</em></p>
+						</div><!-- /.row-breadcrumb -->			
+					</div>
+				</div>
+				<!--.box-bottom-->
+			</div>
+			<!--.centered--><!-- /.content-small -->
+		</div>
+		<!--.content-->
+	</div>
+	<!-- #front-page -->
+	
+	<div class="container world-layout event-details-layout"> 
+		<div class="content">
+			<div class="relative carrousel-dj carrousel-dj-black carrousel-dj-inline">
+				<div class="box-title c-white padding">Lineup</div>
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<!--.dj-box-->
+						<div class="dj-box">
+							<div class="avatar">
+								<img src="images/faces/ranking/face0.jpg" alt="">
+								<!--.follow-->
+								<div class="follow">
+									<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+									<span>Follow</span>
+									</a>
+								</div>
+								<!--.follow-->
+							</div>
+							<a href="#" class="name">
+							<h2>#1</h2>
+							<h3>Hardwell</h3>
+							<img src="images/flags/2.png" alt="" class="flag" />
+							</a>
+						</div>
+						<!--.dj-box-->
+					</div>
+					<div class="swiper-slide">
+						<!--.dj-box-->
+						<div class="dj-box">
+							<div class="avatar">
+								<img src="images/faces/ranking/face1.jpg" alt="">
+								<!--.follow-->
+								<div class="follow">
+									<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+									<span>Follow</span>
+									</a>
+								</div>
+								<!--.follow-->
+							</div>
+							<a href="#" class="name">
+							<h2>#2</h2>
+							<h3>Hardwell</h3>
+							<img src="images/flags/2.png" alt="" class="flag" />
+							</a>
+						</div>
+						<!--.dj-box-->
+					</div>
+					<div class="swiper-slide">
+						<!--.dj-box-->
+						<div class="dj-box">
+							<div class="avatar">
+								<img src="images/faces/ranking/face2.jpg" alt="">
+								<!--.follow-->
+								<div class="follow">
+									<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+									<span>Follow</span>
+									</a>
+								</div>
+								<!--.follow-->
+							</div>
+							<a href="#" class="name">
+							<h2>#3</h2>
+							<h3>Hardwell</h3>
+							<img src="images/flags/2.png" alt="" class="flag" />
+							</a>
+						</div>
+						<!--.dj-box-->
+					</div>
+					<div class="swiper-slide">
+						<!--.dj-box-->
+						<div class="dj-box">
+							<div class="avatar">
+								<img src="images/faces/ranking/face3.jpg" alt="">
+								<!--.follow-->
+								<div class="follow">
+									<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+									<span>Follow</span>
+									</a>
+								</div>
+								<!--.follow-->
+							</div>
+							<a href="#" class="name">
+							<h2>#4</h2>
+							<h3>Hardwell</h3>
+							<img src="images/flags/2.png" alt="" class="flag" />
+							</a>
+						</div>
+						<!--.dj-box-->
+					</div>
+					<div class="swiper-slide">
+						<!--.dj-box-->
+						<div class="dj-box">
+							<div class="avatar">
+								<img src="images/faces/ranking/face4.jpg" alt="">
+								<!--.follow-->
+								<div class="follow">
+									<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+									<span>Follow</span>
+									</a>
+								</div>
+								<!--.follow-->
+							</div>
+							<a href="#" class="name">
+							<h2>#5</h2>
+							<h3>Hardwell</h3>
+							<img src="images/flags/2.png" alt="" class="flag" />
+							</a>
+						</div>
+						<!--.dj-box-->
+					</div>
+					<div class="swiper-slide">
+						<!--.dj-box-->
+						<div class="dj-box">
+							<div class="avatar">
+								<img src="images/faces/ranking/face5.jpg" alt="">
+								<!--.follow-->
+								<div class="follow">
+									<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+									<span>Follow</span>
+									</a>
+								</div>
+								<!--.follow-->
+							</div>
+							<a href="#" class="name">
+							<h2>#6</h2>
+							<h3>Hardwell</h3>
+							<img src="images/flags/2.png" alt="" class="flag" />
+							</a>
+						</div>
+						<!--.dj-box-->
+					</div>
+					<div class="swiper-slide">
+						<!--.dj-box-->
+						<div class="dj-box">
+							<div class="avatar">
+								<img src="images/faces/ranking/face6.jpg" alt="">
+								<!--.follow-->
+								<div class="follow">
+									<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+									<span>Follow</span>
+									</a>
+								</div>
+								<!--.follow-->
+							</div>
+							<a href="#" class="name">
+							<h2>#7</h2>
+							<h3>Hardwell</h3>
+							<img src="images/flags/2.png" alt="" class="flag" />
+							</a>
+						</div>
+						<!--.dj-box-->
+					</div>
+					<div class="swiper-slide">
+						<!--.dj-box-->
+						<div class="dj-box">
+							<div class="avatar">
+								<img src="images/faces/ranking/face7.jpg" alt="">
+								<!--.follow-->
+								<div class="follow">
+									<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+									<span>Follow</span>
+									</a>
+								</div>
+								<!--.follow-->
+							</div>
+							<a href="#" class="name">
+							<h2>#8</h2>
+							<h3>Hardwell</h3>
+							<img src="images/flags/2.png" alt="" class="flag" />
+							</a>
+						</div>
+						<!--.dj-box-->
+					</div>
+					<div class="swiper-slide">
+						<!--.dj-box-->
+						<div class="dj-box">
+							<div class="avatar">
+								<img src="images/faces/ranking/face8.jpg" alt="">
+								<!--.follow-->
+								<div class="follow">
+									<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+									<span>Follow</span>
+									</a>
+								</div>
+								<!--.follow-->
+							</div>
+							<a href="#" class="name">
+							<h2>#9</h2>
+							<h3>Hardwell</h3>
+							<img src="images/flags/2.png" alt="" class="flag" />
+							</a>
+						</div>
+						<!--.dj-box-->
+					</div>
+					<div class="swiper-slide">
+						<!--.dj-box-->
+						<div class="dj-box">
+							<div class="avatar">
+								<img src="images/faces/ranking/face9.jpg" alt="">
+								<!--.follow-->
+								<div class="follow">
+									<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+									<span>Follow</span>
+									</a>
+								</div>
+								<!--.follow-->
+							</div>
+							<a href="#" class="name">
+							<h2>#10</h2>
+							<h3>Hardwell</h3>
+							<img src="images/flags/2.png" alt="" class="flag" />
+							</a>
+						</div>
+						<!--.dj-box-->
+					</div>
+					<div class="swiper-slide">
+						<!--.dj-box-->
+						<div class="dj-box">
+							<div class="avatar">
+								<img src="images/faces/ranking/face10.jpg" alt="">
+								<!--.follow-->
+								<div class="follow">
+									<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+									<span>Follow</span>
+									</a>
+								</div>
+								<!--.follow-->
+							</div>
+							<a href="#" class="name">
+							<h2>#11</h2>
+							<h3>Hardwell</h3>
+							<img src="images/flags/2.png" alt="" class="flag" />
+							</a>
+						</div>
+						<!--.dj-box-->
+					</div>
+					<div class="swiper-slide">
+						<!--.dj-box-->
+						<div class="dj-box">
+							<div class="avatar">
+								<img src="images/faces/ranking/face11.jpg" alt="">
+								<!--.follow-->
+								<div class="follow">
+									<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+									<span>Follow</span>
+									</a>
+								</div>
+								<!--.follow-->
+							</div>
+							<a href="#" class="name">
+							<h2>#12</h2>
+							<h3>Hardwell</h3>
+							<img src="images/flags/2.png" alt="" class="flag" />
+							</a>
+						</div>
+						<!--.dj-box-->
+					</div>
+					<div class="swiper-slide">
+						<!--.dj-box-->
+						<div class="dj-box">
+							<div class="avatar">
+								<img src="images/faces/ranking/face12.jpg" alt="">
+								<!--.follow-->
+								<div class="follow">
+									<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+									<span>Follow</span>
+									</a>
+								</div>
+								<!--.follow-->
+							</div>
+							<a href="#" class="name">
+							<h2>#13</h2>
+							<h3>Hardwell</h3>
+							<img src="images/flags/2.png" alt="" class="flag" />
+							</a>
+						</div>
+						<!--.dj-box-->
+					</div>
+					<div class="swiper-slide">
+						<!--.dj-box-->
+						<div class="dj-box">
+							<div class="avatar">
+								<img src="images/faces/ranking/face13.jpg" alt="">
+								<!--.follow-->
+								<div class="follow">
+									<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+									<span>Follow</span>
+									</a>
+								</div>
+								<!--.follow-->
+							</div>
+							<a href="#" class="name">
+							<h2>#14</h2>
+							<h3>Hardwell</h3>
+							<img src="images/flags/2.png" alt="" class="flag" />
+							</a>
+						</div>
+						<!--.dj-box-->
+					</div>
+					<div class="swiper-slide">
+						<!--.dj-box-->
+						<div class="dj-box">
+							<div class="avatar">
+								<img src="images/faces/ranking/face14.jpg" alt="">
+								<!--.follow-->
+								<div class="follow">
+									<a class="button-follow btn-5 btn-5b fa fa-chevron-right" href="#">
+									<span>Follow</span>
+									</a>
+								</div>
+								<!--.follow-->
+							</div>
+							<a href="#" class="name">
+							<h2>#15</h2>
+							<h3>Hardwell</h3>
+							<img src="images/flags/2.png" alt="" class="flag" />
+							</a>
+						</div>
+						<!--.dj-box-->
+					</div>
+				</div>
+				<div class="carrousel-scrollbar">
+				</div>
+			</div>
+
+			<div class="event-boxes-new">
+				<div class="event-box-playlist">
+					<div id="mixes-tracks">
+						<ul>
+							<li>
+							<h3>
+							<!-- <a href="#title-mixes" class="title-mixes selected f-bold">Mixes</a> -->
+							<a href="#title-mixes" class="title-mixes selected f-bold"><span class="roll" data-title="Artists Mixes">Artists Mixes</span></a>
+							</h3>
+							</li>
+							<li>
+							<h3>
+							<!-- <a href="#title-mixes" class="title-mixes selected f-bold">Mixes</a> -->
+							<a href="#title-mixes" class="title-mixes f-bold"><span class="roll" data-title="Artists Tracks">Artists Tracks</span></a>
+							</h3>
+							</li>					
+						</ul>
+						<div class="mixes">
+							<div class="player player-home">
+					
+								<div class="player-item">
+									<p class="player-place">02.02 Live from Berlin, Germany</p>
+									<a href="https://soundcloud.com/bedrock_rec/beddigi46-vince-watson-magma" class="sc-player">
+									</a>
+					
+									<div class="items-track">
+										<div class="love-track">
+											<a href=""><i class="fa fa-heart-o"></i></a>
+										</div>
+										<div class="add-track">
+											<a href=""><i class="fa fa-add"></i></a>
+										</div>
+										<div class="share-track">
+											<a href=""><i class="fa fa-share"></i></a>
+										</div>
+										<div class="comment-track">
+											<a href=""><i class="fa fa-comment"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="player-item">
+									<p class="player-place">06.02 Live from Eindhoven, Netherlands</p>
+									<a href="https://soundcloud.com/aviciiofficial/avicii-wake-me-up-extended-mix" class="sc-player">
+									</a>
+									<div class="items-track">
+										<div class="love-track">
+											<a href=""><i class="fa fa-heart-o"></i></a>
+										</div>
+										<div class="add-track">
+											<a href=""><i class="fa fa-add"></i></a>
+										</div>
+										<div class="share-track">
+											<a href=""><i class="fa fa-share"></i></a>
+										</div>
+										<div class="comment-track">
+											<a href=""><i class="fa fa-comment"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="player-item">
+									<p class="player-place">06.02 Live from Eindhoven, Netherlands</p>
+									<a href="https://soundcloud.com/aviciiofficial/avicii-wake-me-up-extended-mix" class="sc-player">
+									</a>
+									<div class="items-track">
+										<div class="love-track">
+											<a href=""><i class="fa fa-heart-o"></i></a>
+										</div>
+										<div class="add-track">
+											<a href=""><i class="fa fa-add"></i></a>
+										</div>
+										<div class="share-track">
+											<a href=""><i class="fa fa-share"></i></a>
+										</div>
+										<div class="comment-track">
+											<a href=""><i class="fa fa-comment"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="player-item">
+									<p class="player-place">06.02 Live from Eindhoven, Netherlands</p>
+									<a href="https://soundcloud.com/aviciiofficial/avicii-wake-me-up-extended-mix" class="sc-player">
+									</a>
+									<div class="items-track">
+										<div class="love-track">
+											<a href=""><i class="fa fa-heart-o"></i></a>
+										</div>
+										<div class="add-track">
+											<a href=""><i class="fa fa-add"></i></a>
+										</div>
+										<div class="share-track">
+											<a href=""><i class="fa fa-share"></i></a>
+										</div>
+										<div class="comment-track">
+											<a href=""><i class="fa fa-comment"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="player-item">
+									<p class="player-place">06.02 Live from Eindhoven, Netherlands</p>
+									<a href="https://soundcloud.com/aviciiofficial/avicii-wake-me-up-extended-mix" class="sc-player">
+									</a>
+									<div class="items-track">
+										<div class="love-track">
+											<a href=""><i class="fa fa-heart-o"></i></a>
+										</div>
+										<div class="add-track">
+											<a href=""><i class="fa fa-add"></i></a>
+										</div>
+										<div class="share-track">
+											<a href=""><i class="fa fa-share"></i></a>
+										</div>
+										<div class="comment-track">
+											<a href=""><i class="fa fa-comment"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="player-item">
+									<p class="player-place">06.02 Live from Eindhoven, Netherlands</p>
+									<a href="https://soundcloud.com/aviciiofficial/avicii-wake-me-up-extended-mix" class="sc-player">
+									</a>
+									<div class="items-track">
+										<div class="love-track">
+											<a href=""><i class="fa fa-heart-o"></i></a>
+										</div>
+										<div class="add-track">
+											<a href=""><i class="fa fa-add"></i></a>
+										</div>
+										<div class="share-track">
+											<a href=""><i class="fa fa-share"></i></a>
+										</div>
+										<div class="comment-track">
+											<a href=""><i class="fa fa-comment"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tracks hidden">
+							<div class="player">
+								<div class="player-item">
+									<a href="https://soundcloud.com/sean-conran/blured-lines-club-edit" class="sc-player">
+									</a>
+									<div class="items-track">
+										<div class="love-track">
+											<a href=""><i class="fa fa-heart-o"></i></a>
+										</div>
+										<div class="add-track">
+											<a href=""><i class="fa fa-add"></i></a>
+										</div>
+										<div class="share-track">
+											<a href=""><i class="fa fa-share"></i></a>
+										</div>
+										<div class="comment-track">
+											<a href=""><i class="fa fa-comment"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="player-item">
+									<a href="https://soundcloud.com/djirony/play-hard-david-guetta-ft-neyo" class="sc-player">
+									</a>
+									<div class="items-track">
+										<div class="love-track">
+											<a href=""><i class="fa fa-heart-o"></i></a>
+										</div>
+										<div class="add-track">
+											<a href=""><i class="fa fa-add"></i></a>
+										</div>
+										<div class="share-track">
+											<a href=""><i class="fa fa-share"></i></a>
+										</div>
+										<div class="comment-track">
+											<a href=""><i class="fa fa-comment"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="player-item">
+									<a href="https://soundcloud.com/aviciiofficial/avicii-wake-me-up-extended-mix" class="sc-player">
+									</a>
+									<div class="items-track">
+										<div class="love-track">
+											<a href=""><i class="fa fa-heart-o"></i></a>
+										</div>
+										<div class="add-track">
+											<a href=""><i class="fa fa-add"></i></a>
+										</div>
+										<div class="share-track">
+											<a href=""><i class="fa fa-share"></i></a>
+										</div>
+										<div class="comment-track">
+											<a href=""><i class="fa fa-comment"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>						
+					</div>
+				</div><!-- /.event-box-playlist -->
+				<div class="event-boxes-widgets">
+					<div class="event-box-widget">
+						<div class="event-box-widget-title">
+							<h3>Ruby Skye</h3>
+						</div><!-- /.event-box-widget-title -->
+						<div class="event-box-widget-container">
+							<div class="event-box-widget-image">
+								<a href="#"><img src="images/event-box-widget-image.jpg" alt="" /></a>
+							</div><!-- /.event-box-widget-image -->
+							<div class="event-box-widget-content">
+								<div class="info-extra">
+									<ul>
+								
+										<li>
+											<a href="">
+												<i class="fa fa-map-marker"></i>316 11th Street, San Francisco, CA
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<i class="fa fa-globe"></i>www.audiosf.com
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<i class="fa fa-envelope"></i>reservations@audiosf.com
+											</a>
+										</li>
+										<li>
+											<i class="fa fa-phone"></i>(415) 481 0556
+										</li>
+									</ul>
+								</div>
+							</div><!-- /.event-box-widget-content -->
+						</div><!-- /.event-box-widget-container -->
+						<div class="event-box-widget-foot">
+							<div class="event-box-widget-follow">
+								<p><strong>1461</strong>Following</p>
+							</div><!-- /.event-box-widget-follow -->
+							<div class="event-box-widget-images">
+								<ul>
+									<li><a href="#"><img src="images/event-box-widget-images1.jpg" alt="" /></a></li>
+									<li><a href="#"><img src="images/event-box-widget-images2.jpg" alt="" /></a></li>
+									<li><a href="#"><img src="images/event-box-widget-images3.jpg" alt="" /></a></li>
+									<li><a href="#"><img src="images/event-box-widget-images4.jpg" alt="" /></a></li>
+								</ul>
+							</div><!-- /.event-box-widget-images -->
+							<div class="event-box-widget-actions">
+								<button class="button-follow btn btn-5 btn-5b fa fa-chevron-right">
+									<span class="f-regular">FOLLOW</span>
+								</button>
+							</div><!-- /.event-box-widget-actions -->
+						</div><!-- /.event-box-widget-foot -->
+						<button class="more">
+							<i class="fa fa-plus"></i> 	
+						</button>
+					</div><!-- /.event-box-widget -->
+					<div class="event-box-widget">
+						<div class="event-box-widget-title">
+							<h3>Ruby Skye</h3>
+						</div><!-- /.event-box-widget-title -->
+						<div class="event-box-widget-entries">
+							<ul>
+								<li class="event-box-widget-entry">
+									<div class="event-box-widget-entry-image">
+										<a href="#"><img src="images/event-box-widget-entry1.jpg" alt="" /></a>
+									</div><!-- /.event-box-widget-entry-image -->
+									<div class="event-box-widget-entry-content">
+										<p><a href="#">John Doe Cocoliche</a></p>
+									</div><!-- /.event-box-widget-entry-content -->
+								</li>
+								<li class="event-box-widget-entry">
+									<div class="event-box-widget-entry-image">
+										<a href="#"><img src="images/event-box-widget-entry2.jpg" alt="" /></a>
+									</div><!-- /.event-box-widget-entry-image -->
+									<div class="event-box-widget-entry-content">
+										<p><a href="#">Crobar Buenos Aires</a></p>
+									</div><!-- /.event-box-widget-entry-content -->
+								</li>
+								<li class="event-box-widget-entry">
+									<div class="event-box-widget-entry-image">
+										<a href="#"><img src="images/event-box-widget-entry3.jpg" alt="" /></a>
+									</div><!-- /.event-box-widget-entry-image -->
+									<div class="event-box-widget-entry-content">
+										<p><a href="#">Bahrein</a></p>
+									</div><!-- /.event-box-widget-entry-content -->
+								</li>
+								<li class="event-box-widget-entry">
+									<div class="event-box-widget-entry-image">
+										<a href="#"><img src="images/event-box-widget-entry4.jpg" alt="" /></a>
+									</div><!-- /.event-box-widget-entry-image -->
+									<div class="event-box-widget-entry-content">
+										<p><a href="#">Niceto Club</a></p>
+									</div><!-- /.event-box-widget-entry-content -->
+								</li>
+							</ul>
+						</div><!-- /.event-box-widget-entries -->
+					</div><!-- /.event-box-widget -->
+				</div><!-- /.event-boxes-widgets -->
+			</div><!-- /.event-boxes-new -->
+		</div>
+	</div>
+	<!-- .venue-layout -->
+	<footer id="footer" class="container">
+	<ul id="sign-up" class="inline-block">
+		<h4>SIGN UP</h4>
+		<li><a href="">Join</a></li>
+		<li><a href="">Free or Login</a></li>
+		<li class="phone"><a href=""><i class="fa fa-mobile-phone"></i></a></li>
+		<li id="link_to_app"><a href="">Get DJListAPP</a></li>
+	</ul>
+	<ul id="company" class="inline-block">
+		<h4>COMPANY</h4>
+		<li><a href="">About</a></li>
+		<li><a href="">Contact US</a></li>
+		<li><a href="">Help & FAQs</a></li>
+		<li><a href="">Jobs</a></li>
+		<li><a href="">Partner</a></li>
+	</ul>
+	<ul id="claim-profile" class="inline-block">
+		<h4>CLAIM PROFILE</h4>
+		<li><a href="">Djs</a></li>
+		<li><a href="">Clubs/Venues</a></li>
+		<li><a href="">Agents/Mgmt</a></li>
+		<li><a href="">Labels</a></li>
+		<li><a href="">Publicists</a></li>
+	</ul>
+	<ul id="extras" class="inline-block">
+		<h4>EXTRAS</h4>
+		<li><a href="">PRO DJ</a></li>
+		<li><a href="">Credits</a></li>
+		<li><a href="">IPhone App</a></li>
+		<li><a href="">Developer Api</a></li>
+		<li><a href="">Merchandise</a></li>
+	</ul>
+	<ul id="social" class="inline-block">
+		<h4>SOCIAL</h4>
+		<li><a href=""><i class="fa fa-facebook2"></i>Facebook</a></li>
+		<li><a href=""><i class="fa fa-twitter"></i>Twitter</a></li>
+		<li><a href=""><i class="fa fa-instagram"></i>Instagram</a></li>
+		<li><a href=""><i class="fa fa-youtube-play"></i>YouTube</a></li>
+	</ul>
+	<div id="copyright">
+		<div class="legend">
+			<span class="f-bold">THE</span><span class="f-light">DJ</span><span class="f-bold">LIST</span> thedjlist.com All rights Reserved.
+		</div>
+	</div>
+	</footer>
+</div>
+<script src="javascripts/functions.js" type="text/javascript"></script>
+<script src="javascripts/all.js" type="text/javascript"></script>
+<script src="javascripts/responsive.js"></script>
+<script src="javascripts/jquery.flipshow.js"></script>
+<script>
+    $( function() {
+        $( '#fc-slideshow' ).flipshow();
+    } );
+ </script>
+</body>
+</html>
